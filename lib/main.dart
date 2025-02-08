@@ -1,125 +1,210 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:tflite_flutter/tflite_flutter.dart';
+import 'package:image/image.dart' as img;
 
 void main() {
-  runApp(const MyApp());
+  runApp(const DogBreedApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class DogBreedApp extends StatelessWidget {
+  const DogBreedApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      title: 'Dog Breed Identifier',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const HomeScreen(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
-
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+class _HomeScreenState extends State<HomeScreen> {
+  Interpreter? _interpreter;
+  File? _image;
+  List<double>? _predictions;
 
-  void _incrementCounter() {
+  // These values should match your model's expected input dimensions
+  final int _inputSize = 224;
+  final double _mean = 127.5;
+  final double _std = 127.5;
+
+  @override
+  void initState() {
+    super.initState();
+    loadModel();
+  }
+
+  // Load the TFLite model from assets using tflite_flutter.
+  Future<void> loadModel() async {
+    try {
+      _interpreter = await Interpreter.fromAsset('assets/dog_breed_model.tflite');
+      debugPrint('Interpreter loaded successfully');
+    } catch (e) {
+      debugPrint('Error while loading the model: $e');
+    }
+  }
+
+  // Preprocess the image:
+  // 1. Read and decode the image file.
+  // 2. Resize it to [_inputSize] x [_inputSize].
+  // 3. Normalize pixel values using (_mean, _std) normalization.
+  // 4. Build a 4D List with shape [1, _inputSize, _inputSize, 3].
+  Future<List<List<List<List<double>>>>> _preProcessImage(File imageFile) async {
+    // Read image bytes
+    final imageBytes = await imageFile.readAsBytes();
+    // Decode the image using the image package
+    img.Image? image = img.decodeImage(imageBytes);
+    if (image == null) {
+      throw Exception("Could not decode image");
+    }
+    // Resize the image to the desired size
+    img.Image resizedImage = img.copyResize(image, width: _inputSize, height: _inputSize);
+
+    // Create a 4D list with shape [1, _inputSize, _inputSize, 3]
+    var input = List.generate(
+      1,
+      (_) => List.generate(
+        _inputSize,
+        (_) => List.generate(
+          _inputSize,
+          (_) => List.filled(3, 0.0),
+        ),
+      ),
+    );
+
+    // Populate the list with normalized pixel values.
+    // The image package uses ARGB format.
+    for (int i = 0; i < _inputSize; i++) {
+      for (int j = 0; j < _inputSize; j++) {
+        int pixel = resizedImage.getPixel(j, i); // note: (x, y)
+        double r = img.getRed(pixel).toDouble();
+        double g = img.getGreen(pixel).toDouble();
+        double b = img.getBlue(pixel).toDouble();
+        input[0][i][j][0] = (r - _mean) / _std;
+        input[0][i][j][1] = (g - _mean) / _std;
+        input[0][i][j][2] = (b - _mean) / _std;
+      }
+    }
+    return input;
+  }
+
+  // Run inference on the preprocessed image and update _predictions.
+  Future<void> predict(File image) async {
+    if (_interpreter == null) return;
+
+    // Preprocess the image and prepare input tensor.
+    var input = await _preProcessImage(image);
+
+    // Retrieve the output shape from the model.
+    var outputShape = _interpreter!.getOutputTensor(0).shape; // e.g. [1, numClasses]
+    int numClasses = outputShape[1];
+
+    // Create an output buffer as a 2D list of shape [1, numClasses]
+    var output = List.generate(1, (_) => List.filled(numClasses, 0.0));
+
+    // Run inference.
+    _interpreter!.run(input, output);
+
+    // For simplicity, we assume that output[0] contains the probabilities for each class.
     setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
+      _predictions = output[0];
     });
+    debugPrint("Inference result: $_predictions");
+  }
+
+  // Use ImagePicker to select an image from the specified [source].
+  Future<void> pickImage(ImageSource source) async {
+    final ImagePicker picker = ImagePicker();
+    final XFile? file = await picker.pickImage(source: source, maxHeight: 300);
+    if (file == null) return;
+
+    File imageFile = File(file.path);
+    setState(() {
+      _image = imageFile;
+      _predictions = null;
+    });
+    await predict(imageFile);
+  }
+
+  @override
+  void dispose() {
+    _interpreter?.close();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
+        title: const Text("Dog Breed Identifier"),
       ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+          children: [
+            // Display the selected image (or a placeholder)
+            Container(
+              height: 250,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: _image != null
+                  ? Image.file(_image!, fit: BoxFit.cover)
+                  : Image.network(
+                      'https://i.imgur.com/sUFH1Aq.png',
+                      fit: BoxFit.cover,
+                    ),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+            const SizedBox(height: 16),
+            // Buttons to pick an image from camera or gallery
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton.icon(
+                  onPressed: () => pickImage(ImageSource.camera),
+                  icon: const Icon(Icons.camera_alt),
+                  label: const Text("Camera"),
+                ),
+                ElevatedButton.icon(
+                  onPressed: () => pickImage(ImageSource.gallery),
+                  icon: const Icon(Icons.photo_library),
+                  label: const Text("Gallery"),
+                ),
+              ],
             ),
+            const SizedBox(height: 16),
+            // Display the classification results (predicted class probabilities)
+            _predictions != null
+                ? Column(
+                    children: _predictions!.asMap().entries.map((entry) {
+                      int index = entry.key;
+                      double confidence = entry.value;
+                      return Card(
+                        margin: const EdgeInsets.symmetric(vertical: 4),
+                        child: ListTile(
+                          // If you have a label mapping, you can replace "Class $index"
+                          // with the actual dog breed name.
+                          title: Text("Class $index"),
+                          trailing: Text("${(confidence * 100).toStringAsFixed(1)}%"),
+                        ),
+                      );
+                    }).toList(),
+                  )
+                : const SizedBox.shrink(),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

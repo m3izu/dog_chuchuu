@@ -43,25 +43,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-
-# Flutter & Dart
-.dart_tool/
-.build/
-pubspec.lock
-generated_plugin_registrant.dart
-
-# IDE
-.idea/
-.vscode/
-*.iml
-
-# macOS & Linux
-*.DS_Store
-*.lock
-
-# Flutter specific
-android/.gradle/
-android/app/debug.keystore
-
-# Firebase
-firebase.json
