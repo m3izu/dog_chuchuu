@@ -2,7 +2,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <application
-        android:label="dog_chuchu"
+        android:label="dog_chuchuu"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

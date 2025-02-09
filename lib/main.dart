@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:tflite_flutter/tflite_flutter.dart';
 import 'package:image/image.dart' as img;
+import 'dart:typed_data';
 
 void main() {
   runApp(const DogBreedApp());
@@ -23,19 +24,18 @@ class DogBreedApp extends StatelessWidget {
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
+
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
   Interpreter? _interpreter;
+  List<String>? _labels;
   File? _image;
-  List<double>? _predictions;
-
-  // These values should match your model's expected input dimensions
+  Map<String, double>? _predictions;
+  
   final int _inputSize = 224;
-  final double _mean = 127.5;
-  final double _std = 127.5;
 
   @override
   void initState() {
@@ -43,95 +43,83 @@ class _HomeScreenState extends State<HomeScreen> {
     loadModel();
   }
 
-  // Load the TFLite model from assets using tflite_flutter.
+  // Load TFLite model & labels
   Future<void> loadModel() async {
     try {
-      _interpreter = await Interpreter.fromAsset('assets/dog_breed_model.tflite');
-      debugPrint('Interpreter loaded successfully');
+      _interpreter = await Interpreter.fromAsset('assets/model.tflite');
+      _labels = await loadLabels('assets/labels.txt');
+      debugPrint('Model & labels loaded.');
     } catch (e) {
-      debugPrint('Error while loading the model: $e');
+      debugPrint('Error loading model: $e');
     }
   }
 
-  // Preprocess the image:
-  // 1. Read and decode the image file.
-  // 2. Resize it to [_inputSize] x [_inputSize].
-  // 3. Normalize pixel values using (_mean, _std) normalization.
-  // 4. Build a 4D List with shape [1, _inputSize, _inputSize, 3].
-  Future<List<List<List<List<double>>>>> _preProcessImage(File imageFile) async {
-    // Read image bytes
-    final imageBytes = await imageFile.readAsBytes();
-    // Decode the image using the image package
+  // Load label names from text file
+  Future<List<String>> loadLabels(String path) async {
+    String data = await DefaultAssetBundle.of(context).loadString(path);
+    return data.split('\n').map((e) => e.trim()).toList();
+  }
+
+  // Image preprocessing: Resize & Normalize
+  Future<Float32List> preprocessImage(File imageFile) async {
+    Uint8List imageBytes = await imageFile.readAsBytes();
     img.Image? image = img.decodeImage(imageBytes);
-    if (image == null) {
-      throw Exception("Could not decode image");
-    }
-    // Resize the image to the desired size
+    if (image == null) throw Exception("Failed to decode image");
+
+    // Resize to match model's expected input size
     img.Image resizedImage = img.copyResize(image, width: _inputSize, height: _inputSize);
 
-    // Create a 4D list with shape [1, _inputSize, _inputSize, 3]
-    var input = List.generate(
-      1,
-      (_) => List.generate(
-        _inputSize,
-        (_) => List.generate(
-          _inputSize,
-          (_) => List.filled(3, 0.0),
-        ),
-      ),
-    );
+    // Convert image pixels to Float32List
+    var buffer = Float32List(_inputSize * _inputSize * 3);
+    var pixelIndex = 0;
 
-    // Populate the list with normalized pixel values.
-    // The image package uses ARGB format.
-    for (int i = 0; i < _inputSize; i++) {
-      for (int j = 0; j < _inputSize; j++) {
-        int pixel = resizedImage.getPixel(j, i); // note: (x, y)
-        double r = img.getRed(pixel).toDouble();
-        double g = img.getGreen(pixel).toDouble();
-        double b = img.getBlue(pixel).toDouble();
-        input[0][i][j][0] = (r - _mean) / _std;
-        input[0][i][j][1] = (g - _mean) / _std;
-        input[0][i][j][2] = (b - _mean) / _std;
+    for (int y = 0; y < _inputSize; y++) {
+      for (int x = 0; x < _inputSize; x++) {
+        int pixel = resizedImage.getPixel(x, y);
+        buffer[pixelIndex++] = img.getRed(pixel) / 255.0; // Normalize [0,1]
+        buffer[pixelIndex++] = img.getGreen(pixel) / 255.0;
+        buffer[pixelIndex++] = img.getBlue(pixel) / 255.0;
       }
     }
-    return input;
+
+    return buffer;
   }
 
-  // Run inference on the preprocessed image and update _predictions.
+  // Run inference on the image
   Future<void> predict(File image) async {
-    if (_interpreter == null) return;
+    if (_interpreter == null || _labels == null) return;
 
-    // Preprocess the image and prepare input tensor.
-    var input = await _preProcessImage(image);
+    var input = await preprocessImage(image);
+    var output = List.generate(1, (_) => List.filled(120, 0.0)); // Model outputs 120 probabilities
 
-    // Retrieve the output shape from the model.
-    var outputShape = _interpreter!.getOutputTensor(0).shape; // e.g. [1, numClasses]
-    int numClasses = outputShape[1];
+    _interpreter!.run(input.reshape([1, _inputSize, _inputSize, 3]), output);
 
-    // Create an output buffer as a 2D list of shape [1, numClasses]
-    var output = List.generate(1, (_) => List.filled(numClasses, 0.0));
+    // Convert output probabilities into a map of breed names & confidence scores
+    var predictions = <String, double>{};
+    for (int i = 0; i < _labels!.length; i++) {
+      predictions[_labels![i]] = output[0][i] * 100; // Convert to percentage
+    }
 
-    // Run inference.
-    _interpreter!.run(input, output);
+    // Sort predictions by confidence score
+    predictions = Map.fromEntries(
+      predictions.entries.toList()..sort((a, b) => b.value.compareTo(a.value)),
+    );
 
-    // For simplicity, we assume that output[0] contains the probabilities for each class.
     setState(() {
-      _predictions = output[0];
+      _predictions = predictions;
+      _image = image;
     });
-    debugPrint("Inference result: $_predictions");
+
+    debugPrint("Predictions: $_predictions");
   }
 
-  // Use ImagePicker to select an image from the specified [source].
+  // Image selection
   Future<void> pickImage(ImageSource source) async {
-    final ImagePicker picker = ImagePicker();
-    final XFile? file = await picker.pickImage(source: source, maxHeight: 300);
+    final picker = ImagePicker();
+    final XFile? file = await picker.pickImage(source: source);
     if (file == null) return;
 
     File imageFile = File(file.path);
-    setState(() {
-      _image = imageFile;
-      _predictions = null;
-    });
     await predict(imageFile);
   }
 
@@ -144,14 +132,12 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("irong buang"),
-      ),
+      appBar: AppBar(title: const Text("irong buang")),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            // Display the selected image (or a placeholder)
+            // Image Display
             Container(
               height: 250,
               width: double.infinity,
@@ -167,7 +153,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
             ),
             const SizedBox(height: 16),
-            // Buttons to pick an image from camera or gallery
+            // Buttons for Image Selection
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -184,19 +170,15 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
             const SizedBox(height: 16),
-            // Display the classification results (predicted class probabilities)
+            // Display Predictions
             _predictions != null
                 ? Column(
-                    children: _predictions!.asMap().entries.map((entry) {
-                      int index = entry.key;
-                      double confidence = entry.value;
+                    children: _predictions!.entries.map((entry) {
                       return Card(
                         margin: const EdgeInsets.symmetric(vertical: 4),
                         child: ListTile(
-                          // If you have a label mapping, you can replace "Class $index"
-                          // with the actual dog breed name.
-                          title: Text("Class $index"),
-                          trailing: Text("${(confidence * 100).toStringAsFixed(1)}%"),
+                          title: Text(entry.key, style: const TextStyle(fontWeight: FontWeight.bold)),
+                          trailing: Text("${entry.value.toStringAsFixed(1)}%", style: const TextStyle(color: Colors.blue)),
                         ),
                       );
                     }).toList(),
