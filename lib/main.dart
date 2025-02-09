@@ -14,7 +14,7 @@ class DogBreedApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Dog Breed Identifier',
+      title: 'irong buang',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: const HomeScreen(),
     );
@@ -145,7 +145,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Dog Breed Identifier"),
+        title: const Text("irong buang"),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
