@@ -147,8 +147,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               child: _image != null
                   ? Image.file(_image!, fit: BoxFit.cover)
-                  : Image.network(
-                      'https://i.imgur.com/sUFH1Aq.png',
+                  : Image.asset(
+                      'assets/placeholder.png',
                       fit: BoxFit.cover,
                     ),
             ),
