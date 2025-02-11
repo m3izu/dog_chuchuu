@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1092720212270",
+    "project_id": "dog-chuchuu",
+    "storage_bucket": "dog-chuchuu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092720212270:android:08c1ec4488922d1fdf62bf",
+        "android_client_info": {
+          "package_name": "com.example.dog_chuchuu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1rstTbBL9YErhxcY3HKr36wpHmAphO2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
