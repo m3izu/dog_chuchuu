@@ -5,4 +5,4 @@ model made by: https://github.com/mahmutcankurt. (thank you lods)
 
 latest stable debug release: [Click Here](https://www.mediafire.com/file/1yz41gml7eun3s1/app-debug.apk/file) arm64-v8a
 
-[IMAGE]https://ibb.co/RGzgY8qQ
+[IMAGE](https://ibb.co/RGzgY8qQ)
