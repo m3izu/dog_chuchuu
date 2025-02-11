@@ -23,7 +23,7 @@ class DogBreedApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Dog Breed Analyzer',
+      title: 'dog_chuchuu, a dog breed classifier',
       theme: ThemeData(primarySwatch: Colors.blue),
       // Define named routes for navigation.
       initialRoute: '/',
@@ -154,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Dog Breed Analyzer"),
+        title: const Text("dog_chuchuu, a dog breed classifier"),
         actions: [
           // An icon that goes to Login if not logged in,
           // or to the Social Feed if logged in.
