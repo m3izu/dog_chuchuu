@@ -10,6 +10,7 @@ import 'package:image/image.dart' as img;
 import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http;
 import 'package:tflite_flutter/tflite_flutter.dart';
+import 'splash.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,8 +27,9 @@ class DogBreedApp extends StatelessWidget {
       title: 'dog_chuchuu, a dog breed classifier',
       theme: ThemeData(primarySwatch: Colors.blue),
       // Define named routes for navigation.
-      initialRoute: '/',
+      initialRoute: '/splash',
       routes: {
+        '/splash': (context) => const Splash(), 
         '/': (context) => const HomeScreen(),
         '/login': (context) => const LoginScreen(),
         '/share': (context) => const ShareResultScreen(),
@@ -383,7 +385,7 @@ class _ShareResultScreenState extends State<ShareResultScreen> {
         'imageUrl': imageUrl,
         'caption': _captionController.text,
         'predictions': predictions,
-        'timestamp': FieldValue.serverTimestamp(),
+        'timestamp': DateTime.now(),
       });
       ScaffoldMessenger.of(context)
           .showSnackBar(const SnackBar(content: Text("Post shared!")));
@@ -458,7 +460,7 @@ class _ShareResultScreenState extends State<ShareResultScreen> {
   }
 }
 
-//
+// 
 // 4. SOCIAL FEED SCREEN
 //    This screen displays posts from Firestore in a newsfeed style.
 //
@@ -512,16 +514,20 @@ class SocialFeedScreen extends StatelessWidget {
                     ),
                     // Optionally, show top prediction.
                     if (predictions.isNotEmpty)
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                        child: Text(
-                          "Top prediction: " +
-                              predictions.entries.first.key +
-                              " (${predictions.entries.first.value.toStringAsFixed(1)}%)",
-                          style: const TextStyle(
-                              fontWeight: FontWeight.bold, color: Colors.blue),
-                        ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      child: Builder(
+                        builder: (_) {
+                          final sortedEntries = predictions.entries.toList()
+                            ..sort((a, b) => b.value.compareTo(a.value));
+                          final topEntry = sortedEntries.first;
+                          return Text(
+                            "Top prediction: ${topEntry.key} (${topEntry.value.toStringAsFixed(1)}%)",
+                            style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
+                          );
+                        },
                       ),
+                    ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(

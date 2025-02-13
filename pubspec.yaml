@@ -29,6 +29,8 @@ flutter:
     - assets/model.tflite
     - assets/labels.txt
     - assets/placeholder.png
+    - assets/ui/splash_bg.jpg
+    - assets/ui/splash_icon.png
     
 
 flutter_icons:
