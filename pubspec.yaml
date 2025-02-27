@@ -29,6 +29,8 @@ flutter:
     - assets/placeholder.png
     - assets/ui/splash_bg.jpg
     - assets/ui/splash_icon.png
+    - assets/dog_face.png
+    
     
 
 flutter_icons:
