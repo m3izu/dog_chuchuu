@@ -4,6 +4,8 @@ import 'screens/home_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/share_result_screen.dart';
 import 'screens/social_feed_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 void main() {
   runApp(const DogBreedApp());
@@ -16,7 +18,8 @@ class DogBreedApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'dog_chuchuu',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(primarySwatch: Colors.blue,
+      textTheme: GoogleFonts.interTextTheme()),
       initialRoute: '/splash',
       routes: {
         '/splash': (context) => const SplashScreen(),

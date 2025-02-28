@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import '../utils/constants.dart';
 
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -81,18 +82,16 @@ class _LoginScreenState extends State<LoginScreen> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 50.0, vertical: 50),
             child: Column(
               children: [
-                const SizedBox(height: 20),
+                Padding(
+  padding: EdgeInsets.only(bottom: 1.0), // Reduce this value
+  child: Image.asset("assets/dog_face.png", height: 197),
+),
 
-                // Dog image at the top
-                Image.asset(
-                  'assets/dog_face.png',
-                  height: 120,
-                ),
 
-                const SizedBox(height: 20),
+                const SizedBox(height: 70),
 
                 // Toggle for Sign Up / Sign In
                 Container(
@@ -237,7 +236,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             onPressed: () {
                               // TODO: Handle forgot password
                             },
-                            child: const Text("Forgot Password?"),
+                            child: const Text("Forgot Password?",
+                                style: TextStyle(color: Color.fromARGB(255, 255, 255, 255))),
                           ),
                         ),
 
@@ -272,6 +272,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   style: const TextStyle(
                                     fontSize: 18,
                                     letterSpacing: 1.2,
+                                    color: Colors.white
                                   ),
                                 ),
                               ),
