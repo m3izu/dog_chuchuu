@@ -5,6 +5,8 @@ import 'screens/login_screen.dart';
 import 'screens/share_result_screen.dart';
 import 'screens/social_feed_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'screens/profile_screen.dart';
+
 
 
 void main() {
@@ -27,6 +29,7 @@ class DogBreedApp extends StatelessWidget {
         '/login': (context) => const LoginScreen(),
         '/share': (context) => const ShareResultScreen(),
         '/feed': (context) => const SocialFeedScreen(),
+        '/profile': (context) => const ProfileScreen(),
       },
     );
   }

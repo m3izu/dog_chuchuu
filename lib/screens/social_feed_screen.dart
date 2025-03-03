@@ -1,7 +1,10 @@
-import 'dart:convert';
+// social_feed_screen.dart
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'dart:convert';
 import '../utils/constants.dart';
+// Import the new profile screen.
+import 'profile_screen.dart';
 
 class SocialFeedScreen extends StatefulWidget {
   const SocialFeedScreen({Key? key}) : super(key: key);
@@ -24,7 +27,20 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Social Feed")),
+      appBar: AppBar(
+        title: const Text("Social Feed"),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.person),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProfileScreen()),
+              );
+            },
+          )
+        ],
+      ),
       body: FutureBuilder<List<dynamic>>(
         future: fetchPosts(),
         builder: (context, snapshot) {
