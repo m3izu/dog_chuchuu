@@ -32,7 +32,10 @@ flutter:
     - assets/ui/splash_icon.png
     - assets/dog_face.png
     - assets/placeholder_profile.png
-    
+    - assets/icon/camera.png
+    - assets/icon/right.png
+    - assets/icon/left.png
+    - assets/icon/heart.png
     
 
 flutter_icons:

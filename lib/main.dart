@@ -20,6 +20,7 @@ class DogBreedApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'dog_chuchuu',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue,
       textTheme: GoogleFonts.interTextTheme()),
       initialRoute: '/splash',

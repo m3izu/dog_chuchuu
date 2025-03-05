@@ -1,9 +1,10 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:image_picker/image_picker.dart';
 import '../utils/constants.dart'; // Contains backendUrl, storage, etc.
 
-// For the Hero animation preview
+// Full-screen image preview with Hero animation.
 class ImagePreviewScreen extends StatelessWidget {
   final String imageUrl;
   final String heroTag;
@@ -16,7 +17,7 @@ class ImagePreviewScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // A full-screen container that closes when tapped outside the image
+    // Tap anywhere to go back.
     return GestureDetector(
       onTap: () => Navigator.pop(context),
       child: Container(
@@ -41,6 +42,9 @@ class SocialFeedScreen extends StatefulWidget {
 class _SocialFeedScreenState extends State<SocialFeedScreen> {
   late Future<List<dynamic>> _postsFuture;
 
+  // Map to track whether a post's caption is expanded.
+  final Map<int, bool> _expandedCaptions = {};
+
   @override
   void initState() {
     super.initState();
@@ -50,6 +54,8 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
   Future<List<dynamic>> _fetchPosts() async {
     final uri = Uri.parse('$backendUrl/posts');
     final response = await http.get(uri);
+    debugPrint('Response status: ${response.statusCode}');
+    debugPrint('Response body: ${response.body}');
     if (response.statusCode == 200) {
       return json.decode(response.body);
     } else {
@@ -57,7 +63,7 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
     }
   }
 
-  // Helper to show full-screen image with hero animation
+  // Show full-screen image preview using Hero animation.
   void _showFullScreenImage(BuildContext context, String imageUrl, String heroTag) {
     Navigator.push(
       context,
@@ -73,19 +79,17 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // Force portrait only (you can also do this in Android/iOS configs or use a plugin)
-    // For a quick approach, wrap with OrientationBuilder or set in native config.
     return Scaffold(
-      // End drawer for the hamburger menu
+      // End drawer for the hamburger menu with some creative items.
       endDrawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
             const DrawerHeader(
-              decoration: BoxDecoration(color: Colors.blueGrey),
+              decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
               child: Text(
-                'Surprise Drawer!',
-                style: TextStyle(color: Colors.white, fontSize: 20),
+                'Irong Buang',
+                style: TextStyle(color: Color.fromARGB(255, 87, 71, 71), fontSize: 20),
               ),
             ),
             ListTile(
@@ -93,19 +97,15 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
               title: const Text('Settings'),
               onTap: () {
                 Navigator.pop(context);
-                // Add your settings logic here
+                // Insert settings logic here.
               },
             ),
             ListTile(
-              leading: const Icon(Icons.info),
-              title: const Text('About'),
+              leading: const Icon(Icons.help_outline),
+              title: const Text('placeholder'),
               onTap: () {
                 Navigator.pop(context);
-                showAboutDialog(
-                  context: context,
-                  applicationName: 'dog_chuchuu',
-                  applicationVersion: '1.0',
-                );
+                // Insert help logic here.
               },
             ),
             ListTile(
@@ -113,7 +113,7 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
               title: const Text('Logout'),
               onTap: () {
                 Navigator.pop(context);
-                // Handle logout logic
+                // Insert logout logic here.
               },
             ),
           ],
@@ -138,21 +138,21 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
       ),
       body: Stack(
         children: [
-          // The main feed
+          // The main scrollable feed.
           FutureBuilder<List<dynamic>>(
             future: _postsFuture,
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
                 return const Center(child: CircularProgressIndicator());
               } else if (snapshot.hasError) {
-                return const Center(child: Text("Error loading posts."));
+                return Center(child: Text("Error loading posts: ${snapshot.error}"));
               } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
                 return const Center(child: Text("No posts yet."));
               }
 
               final posts = snapshot.data!;
               return ListView.builder(
-                padding: const EdgeInsets.only(bottom: 100), // Leave space for pinned banner
+                padding: const EdgeInsets.only(bottom: 100), // Leave space for pinned banner.
                 itemCount: posts.length,
                 itemBuilder: (context, index) {
                   final post = posts[index];
@@ -161,11 +161,11 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
               );
             },
           ),
-          // The pinned banner at the bottom
+          // The pinned banner at the bottom.
           Positioned(
-            left: 0,
-            right: 0,
-            bottom: 0,
+            left: 40,
+            right: 40,
+            bottom: 60,
             child: _buildBottomBanner(context),
           ),
         ],
@@ -174,19 +174,21 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
   }
 
   Widget _buildPostItem(Map<String, dynamic> post, int index) {
-    // Extract relevant info
+    // Extract post data.
     final String? imageUrl = post['imageUrl'] as String?;
     final String? caption = post['caption'] as String?;
-    final String? userName = post['username'] as String?; 
-    // If you store username differently, adjust accordingly
-    final String? profilePic = post['profilePicture'] as String?;
+    // Get the populated user data from "userId".
+    final Map<String, dynamic>? user = post['userId'] as Map<String, dynamic>?;
+    final String? userName = user != null ? user['username'] as String? : null;
+    final String? profilePic = user != null ? user['profilePicture'] as String? : null;
     final String? timeStamp = post['timestamp'] as String?;
+    final Map<String, dynamic>? predictions = post['predictions'] as Map<String, dynamic>?;
 
-    // Format time if needed (currently just local time)
+    // Parse timestamp.
     DateTime postedTime = DateTime.parse(timeStamp!);
-    String timeString = postedTime.toLocal().toString(); // Simplified; you can format it
+    String timeString = postedTime.toLocal().toString();
 
-    // For the avatar: if no profilePic, use placeholder asset
+    // Setup the avatar image: use network image if available, otherwise a placeholder.
     ImageProvider avatarProvider;
     if (profilePic != null && profilePic.isNotEmpty) {
       avatarProvider = NetworkImage(profilePic);
@@ -194,15 +196,30 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
       avatarProvider = const AssetImage('assets/placeholder_profile.png');
     }
 
-    // Hero tag for image animation
+    // Process predictions to extract the breed with the highest confidence.
+    String topBreed = "Unknown Breed";
+    if (predictions != null && predictions.isNotEmpty) {
+      var sortedEntries = predictions.entries.toList()
+        ..sort((a, b) => (b.value as num).compareTo(a.value as num));
+      topBreed = sortedEntries.first.key;
+      // If the prediction contains a dash "-", show only the part after the dash.
+      if (topBreed.contains('-')) {
+        topBreed = topBreed.split('-').last.trim();
+      }
+    }
+
+    // Hero tag for image animation.
     final heroTag = 'postImage_$index';
+
+    // Check if caption is expanded.
+    bool isExpanded = _expandedCaptions[index] ?? false;
 
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // User info row
+          // User info row.
           Row(
             children: [
               CircleAvatar(
@@ -219,47 +236,79 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
                   ),
                 ),
               ),
-              // Time
+              // Timestamp.
               Text(
-                timeString, // e.g. "2025-03-05 12:34:56"
+                timeString,
                 style: const TextStyle(fontSize: 12, color: Colors.grey),
               ),
             ],
           ),
           const SizedBox(height: 8),
-          // Post image (with hero animation)
+          // Post image with Hero animation.
           if (imageUrl != null && imageUrl.isNotEmpty)
-            GestureDetector(
-              onTap: () => _showFullScreenImage(context, imageUrl, heroTag),
-              child: Hero(
-                tag: heroTag,
-                child: Container(
-                  color: Colors.grey.shade300,
-                  // Use aspect ratio or fixed height to match your design
-                  child: Image.network(
-                    imageUrl,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-            )
-          else
-            Container(
-              height: 200,
-              color: Colors.grey.shade300,
-              child: const Center(child: Text("No Image")),
-            ),
+  GestureDetector(
+    onTap: () => _showFullScreenImage(context, imageUrl, heroTag),
+    child: Hero(
+      tag: heroTag,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(16), // Updated border radius here
+        child: Container(
+          color: Colors.grey.shade300,
+          child: Image.network(
+            imageUrl,
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
+    ),
+  )
+else
+  Container(
+    height: 200,
+    color: Colors.grey.shade300,
+    child: const Center(child: Text("No Image")),
+  ),
           const SizedBox(height: 8),
-          // Row with paw icon & caption
+          // Row with paw icon, expandable caption, and prediction badge.
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Icon(Icons.pets, color: Colors.black),
+              Image.asset('assets/icon/heart.png', width: 40, height: 40),
               const SizedBox(width: 8),
+              // Expandable caption.
               Expanded(
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      _expandedCaptions[index] = !isExpanded;
+                    });
+                  },
+                  child: AnimatedSize(
+                    duration: const Duration(milliseconds: 200),
+                    child: Text(
+                      caption ?? "",
+                      style: const TextStyle(fontSize: 14),
+                      maxLines: isExpanded ? null : 2,
+                      overflow: isExpanded ? TextOverflow.visible : TextOverflow.ellipsis,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 8),
+              // Prediction badge.
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: Colors.blue.shade100,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: Colors.blue),
+                ),
                 child: Text(
-                  caption ?? "",
-                  style: const TextStyle(fontSize: 14),
+                  topBreed,
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blue,
+                      fontSize: 14),
                 ),
               ),
             ],
@@ -271,43 +320,43 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
   }
 
   Widget _buildBottomBanner(BuildContext context) {
-    // A pinned banner with 3 icons:
-    // Left: Paw (no function)
-    // Center: Dog-face -> navigate to HomeScreen
-    // Right: Person -> navigate to ProfileScreen
+    // Pinned banner with three buttons:
+    // Left: Paw icon (no function),
+    // Center: Camera icon -> navigate to HomeScreen,
+    // Right: Person icon -> navigate to ProfileScreen.
     return Container(
       height: 80,
-      decoration: BoxDecoration(
-        color: Colors.brown,
-        borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(20),
-          topRight: Radius.circular(20),
+      decoration: const BoxDecoration(
+        color: Color(0xFF967969),
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(60),
+          topRight: Radius.circular(60),
+          bottomLeft: Radius.circular(60),
+          bottomRight: Radius.circular(60),
         ),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          // Left button: paw icon (no function)
+          // Left button: Paw icon (no function).
           IconButton(
-            icon: const Icon(Icons.pets, color: Colors.white),
+            icon: Image.asset('assets/icon/left.png', width: 40, height: 40),
             iconSize: 30,
             onPressed: () {
-              // No function yet
+              // No function for now.
             },
           ),
-          // Center button: dog-face icon -> navigate to home screen
+          // Center button: Camera icon -> navigate to HomeScreen.
           IconButton(
-            icon: const Icon(Icons.camera_alt, color: Colors.white),
-            iconSize: 30,
+            icon: Image.asset('assets/icon/camera.png', width: 120, height: 120),
+            iconSize: 70,
             onPressed: () {
-              // Navigate to HomeScreen
-              // Make sure '/home' is defined in your routes
               Navigator.pushNamed(context, '/');
             },
           ),
-          // Right button: user icon -> navigate to profile screen
+          // Right button: Person icon -> navigate to ProfileScreen.
           IconButton(
-            icon: const Icon(Icons.person, color: Colors.white),
+            icon: Image.asset('assets/icon/right.png', width: 40, height: 40),
             iconSize: 30,
             onPressed: () {
               Navigator.pushNamed(context, '/profile');
