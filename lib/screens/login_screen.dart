@@ -52,18 +52,20 @@ class _LoginScreenState extends State<LoginScreen> {
       final data = json.decode(response.body);
 
       if (response.statusCode == 200) {
-        // Login success or Sign Up success
-        if (isLogin) {
-          // If login, store JWT token
-          String token = data['token'];
-          await storage.write(key: 'jwt', value: token);
-        }
-        Navigator.pop(context); // go back or move to next screen
-      } else {
-        setState(() {
-          errorMessage = data['message'] ?? 'Authentication error';
-        });
-      }
+  // Login success or Sign Up success
+  if (isLogin) {
+    // If login, store JWT token
+    String token = data['token'];
+    await storage.write(key: 'jwt', value: token);
+  }
+  // Navigate to the social feed screen
+  Navigator.pushReplacementNamed(context, '/feed');
+} else {
+  setState(() {
+    errorMessage = data['message'] ?? 'Authentication error';
+  });
+}
+
     } catch (e) {
       setState(() {
         errorMessage = e.toString();

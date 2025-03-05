@@ -7,8 +7,6 @@ import 'screens/social_feed_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'screens/profile_screen.dart';
 
-
-
 void main() {
   runApp(const DogBreedApp());
 }
@@ -21,9 +19,12 @@ class DogBreedApp extends StatelessWidget {
     return MaterialApp(
       title: 'dog_chuchuu',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.blue,
-      textTheme: GoogleFonts.interTextTheme()),
-      initialRoute: '/splash',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        textTheme: GoogleFonts.interTextTheme(),
+      ),
+      // Change initial route to '/login'
+      initialRoute: '/login',
       routes: {
         '/splash': (context) => const SplashScreen(),
         '/': (context) => const HomeScreen(),

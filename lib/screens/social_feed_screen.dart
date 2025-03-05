@@ -63,6 +63,13 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
     }
   }
 
+  // Refresh feed by reassigning the future.
+  void _refreshFeed() {
+    setState(() {
+      _postsFuture = _fetchPosts();
+    });
+  }
+
   // Show full-screen image preview using Hero animation.
   void _showFullScreenImage(BuildContext context, String imageUrl, String heroTag) {
     Navigator.push(
@@ -77,19 +84,26 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
     );
   }
 
+  // Logout function: clears JWT token and navigates to login.
+  Future<void> _logout() async {
+    await storage.delete(key: 'jwt');
+    // Optionally delete other keys such as username or profilePicture.
+    Navigator.pushReplacementNamed(context, '/login');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // End drawer for the hamburger menu with some creative items.
+      // End drawer with creative items including functional logout.
       endDrawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
             const DrawerHeader(
-              decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
+              decoration: BoxDecoration(color: Colors.blueGrey),
               child: Text(
-                'Irong Buang',
-                style: TextStyle(color: Color.fromARGB(255, 87, 71, 71), fontSize: 20),
+                'Surprise Drawer!',
+                style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
             ListTile(
@@ -102,7 +116,7 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
             ),
             ListTile(
               leading: const Icon(Icons.help_outline),
-              title: const Text('placeholder'),
+              title: const Text('Help'),
               onTap: () {
                 Navigator.pop(context);
                 // Insert help logic here.
@@ -113,16 +127,17 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
               title: const Text('Logout'),
               onTap: () {
                 Navigator.pop(context);
-                // Insert logout logic here.
+                _logout();
               },
             ),
           ],
         ),
       ),
       appBar: AppBar(
+        // Replace back button with refresh button.
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => Navigator.pop(context),
+          icon: const Icon(Icons.refresh),
+          onPressed: _refreshFeed,
         ),
         title: const Text('Social Feed'),
         actions: [
@@ -244,32 +259,32 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
             ],
           ),
           const SizedBox(height: 8),
-          // Post image with Hero animation.
+          // Post image with Hero animation and custom border radius.
           if (imageUrl != null && imageUrl.isNotEmpty)
-  GestureDetector(
-    onTap: () => _showFullScreenImage(context, imageUrl, heroTag),
-    child: Hero(
-      tag: heroTag,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(16), // Updated border radius here
-        child: Container(
-          color: Colors.grey.shade300,
-          child: Image.network(
-            imageUrl,
-            fit: BoxFit.cover,
-          ),
-        ),
-      ),
-    ),
-  )
-else
-  Container(
-    height: 200,
-    color: Colors.grey.shade300,
-    child: const Center(child: Text("No Image")),
-  ),
+            GestureDetector(
+              onTap: () => _showFullScreenImage(context, imageUrl, heroTag),
+              child: Hero(
+                tag: heroTag,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(16),
+                  child: Container(
+                    color: Colors.grey.shade300,
+                    child: Image.network(
+                      imageUrl,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+              ),
+            )
+          else
+            Container(
+              height: 200,
+              color: Colors.grey.shade300,
+              child: const Center(child: Text("No Image")),
+            ),
           const SizedBox(height: 8),
-          // Row with paw icon, expandable caption, and prediction badge.
+          // Row with custom icon (from assets), expandable caption, and prediction badge.
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -306,9 +321,10 @@ else
                 child: Text(
                   topBreed,
                   style: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blue,
-                      fontSize: 14),
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue,
+                    fontSize: 14,
+                  ),
                 ),
               ),
             ],
@@ -320,25 +336,20 @@ else
   }
 
   Widget _buildBottomBanner(BuildContext context) {
-    // Pinned banner with three buttons:
-    // Left: Paw icon (no function),
-    // Center: Camera icon -> navigate to HomeScreen,
-    // Right: Person icon -> navigate to ProfileScreen.
+    // Pinned banner with three custom buttons:
+    // Left: Custom left icon (no function),
+    // Center: Custom camera icon -> navigate to HomeScreen,
+    // Right: Custom right icon -> navigate to ProfileScreen.
     return Container(
       height: 80,
       decoration: const BoxDecoration(
         color: Color(0xFF967969),
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(60),
-          topRight: Radius.circular(60),
-          bottomLeft: Radius.circular(60),
-          bottomRight: Radius.circular(60),
-        ),
+        borderRadius: BorderRadius.all(Radius.circular(60)),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          // Left button: Paw icon (no function).
+          // Left button: Custom left icon (no function).
           IconButton(
             icon: Image.asset('assets/icon/left.png', width: 40, height: 40),
             iconSize: 30,
@@ -346,7 +357,7 @@ else
               // No function for now.
             },
           ),
-          // Center button: Camera icon -> navigate to HomeScreen.
+          // Center button: Custom camera icon -> navigate to HomeScreen.
           IconButton(
             icon: Image.asset('assets/icon/camera.png', width: 120, height: 120),
             iconSize: 70,
@@ -354,7 +365,7 @@ else
               Navigator.pushNamed(context, '/');
             },
           ),
-          // Right button: Person icon -> navigate to ProfileScreen.
+          // Right button: Custom right icon -> navigate to ProfileScreen.
           IconButton(
             icon: Image.asset('assets/icon/right.png', width: 40, height: 40),
             iconSize: 30,
