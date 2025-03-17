@@ -86,10 +86,12 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
 
   // Logout function: clears JWT token and navigates to login.
   Future<void> _logout() async {
-    await storage.delete(key: 'jwt');
-    // Optionally delete other keys such as username or profilePicture.
-    Navigator.pushReplacementNamed(context, '/login');
-  }
+  // Clear all keys from secure storage
+  await storage.deleteAll();
+
+  // Navigate to the login screen and remove all previous routes
+  Navigator.pushNamedAndRemoveUntil(context, '/login', (route) => false);
+}
 
   @override
   Widget build(BuildContext context) {
@@ -102,7 +104,7 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
             const DrawerHeader(
               decoration: BoxDecoration(color: Colors.blueGrey),
               child: Text(
-                'Surprise Drawer!',
+                'Group 7 AppDev CS2D 24-25',
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
@@ -354,7 +356,7 @@ class _SocialFeedScreenState extends State<SocialFeedScreen> {
             icon: Image.asset('assets/icon/left.png', width: 40, height: 40),
             iconSize: 30,
             onPressed: () {
-              // No function for now.
+              Navigator.pushNamed(context, '/encyclopedia');
             },
           ),
           // Center button: Custom camera icon -> navigate to HomeScreen.

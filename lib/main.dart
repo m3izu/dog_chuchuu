@@ -6,6 +6,7 @@ import 'screens/share_result_screen.dart';
 import 'screens/social_feed_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'screens/profile_screen.dart';
+import 'screens/dog_encyclopedia_screen.dart';
 
 void main() {
   runApp(const DogBreedApp());
@@ -24,7 +25,7 @@ class DogBreedApp extends StatelessWidget {
         textTheme: GoogleFonts.interTextTheme(),
       ),
       // Change initial route to '/login'
-      initialRoute: '/login',
+      initialRoute: '/splash',
       routes: {
         '/splash': (context) => const SplashScreen(),
         '/': (context) => const HomeScreen(),
@@ -32,6 +33,7 @@ class DogBreedApp extends StatelessWidget {
         '/share': (context) => const ShareResultScreen(),
         '/feed': (context) => const SocialFeedScreen(),
         '/profile': (context) => const ProfileScreen(),
+        '/encyclopedia': (context) => const DogEncyclopediaScreen(),
       },
     );
   }

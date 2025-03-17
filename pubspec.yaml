@@ -36,6 +36,7 @@ flutter:
     - assets/icon/right.png
     - assets/icon/left.png
     - assets/icon/heart.png
+    - assets/dog_breeds_clean.json
     
 
 flutter_icons:

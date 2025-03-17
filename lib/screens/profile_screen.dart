@@ -28,6 +28,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     _loadUserProfile();
     _loadUserInfo();
     _fetchUserPosts();
+    _refreshProfile();
   }
 
   Future<void> _loadUserProfile() async {
@@ -37,15 +38,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   Future<void> _loadUserInfo() async {
-    // Assume the current username is stored in secure storage.
-    String? storedUsername = await storage.read(key: 'username');
-    if (storedUsername != null) {
-      setState(() {
-        currentUsername = storedUsername;
-        _usernameController.text = storedUsername;
-      });
-    }
+  String? storedUsername = await storage.read(key: 'username');
+  if (storedUsername != null) {
+    setState(() {
+      currentUsername = storedUsername;
+      _usernameController.text = storedUsername;
+    });
   }
+}
+
 
   Future<void> _fetchUserPosts() async {
     try {
@@ -68,6 +69,37 @@ class _ProfileScreenState extends State<ProfileScreen> {
       });
     }
   }
+
+  Future<void> _refreshProfile() async {
+  String? token = await storage.read(key: 'jwt');
+  if (token == null) return;
+
+  final uri = Uri.parse('$backendUrl/profile');
+  try {
+    final response = await http.get(uri, headers: {
+      'Authorization': 'Bearer $token',
+    });
+
+    if (response.statusCode == 200) {
+      final userData = json.decode(response.body);
+      // Update secure storage and UI accordingly.
+      if (userData.containsKey('username')) {
+        await storage.write(key: 'username', value: userData['username']);
+      }
+      if (userData.containsKey('profilePicture')) {
+        await storage.write(key: 'profilePicture', value: userData['profilePicture']);
+      }
+      // Call your existing functions to load from storage and update the UI.
+      _loadUserInfo();
+      _loadUserProfile();
+    } else {
+      print("Failed to fetch profile data: ${response.body}");
+    }
+  } catch (e) {
+    print("Error fetching profile: $e");
+  }
+}
+
 
   Future<void> _updateUsername() async {
     setState(() {

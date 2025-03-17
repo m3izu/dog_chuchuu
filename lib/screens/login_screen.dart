@@ -20,6 +20,8 @@ class _LoginScreenState extends State<LoginScreen> {
   String errorMessage = '';
   bool isLoading = false;
 
+  
+
   Future<void> _submit() async {
     // Validate all fields
     final form = _formKey.currentState;
@@ -42,40 +44,62 @@ class _LoginScreenState extends State<LoginScreen> {
     });
 
     try {
-      final endpoint = isLogin ? '/login' : '/signup';
-      final url = Uri.parse('$backendUrl$endpoint');
-      final response = await http.post(
-        url,
-        headers: {'Content-Type': 'application/json'},
-        body: json.encode({'email': email, 'password': password}),
-      );
-      final data = json.decode(response.body);
+    final endpoint = isLogin ? '/login' : '/signup';
+    final url = Uri.parse('$backendUrl$endpoint');
+    final response = await http.post(
+      url,
+      headers: {'Content-Type': 'application/json'},
+      body: json.encode({'email': email, 'password': password}),
+    );
+    final data = json.decode(response.body);
 
-      if (response.statusCode == 200) {
-  // Login success or Sign Up success
-  if (isLogin) {
-    // If login, store JWT token
-    String token = data['token'];
-    await storage.write(key: 'jwt', value: token);
-  }
-  // Navigate to the social feed screen
-  Navigator.pushReplacementNamed(context, '/feed');
-} else {
-  setState(() {
-    errorMessage = data['message'] ?? 'Authentication error';
-  });
-}
+    if (response.statusCode == 200) {
+      // Login or Sign Up success
+      String token = data['token'];
+      await storage.write(key: 'jwt', value: token);
 
-    } catch (e) {
+      // If your backend returns user details, store them too.
+      if (data.containsKey('username')) {
+        await storage.write(key: 'username', value: data['username']);
+      } else {
+        // If not, consider fetching user details right after login.
+        await fetchAndStoreUserDetails(token);
+      }
+      
+      Navigator.pushReplacementNamed(context, '/feed');
+    } else {
       setState(() {
-        errorMessage = e.toString();
-      });
-    } finally {
-      setState(() {
-        isLoading = false;
+        errorMessage = data['message'] ?? 'Authentication error';
       });
     }
+  } catch (e) {
+    setState(() {
+      errorMessage = e.toString();
+    });
+  } finally {
+    setState(() {
+      isLoading = false;
+    });
   }
+}
+
+Future<void> fetchAndStoreUserDetails(String token) async {
+  final uri = Uri.parse('$backendUrl/profile');
+  final response = await http.get(uri, headers: {
+    'Authorization': 'Bearer $token',
+  });
+
+  if (response.statusCode == 200) {
+    final userData = json.decode(response.body);
+    // If the backend returns a username, store it
+    if (userData.containsKey('username')) {
+      await storage.write(key: 'username', value: userData['username']);
+    }
+    // Optionally, store other details if needed
+  } else {
+    debugPrint("Failed to fetch user details");
+  }
+}
 
   @override
   Widget build(BuildContext context) {

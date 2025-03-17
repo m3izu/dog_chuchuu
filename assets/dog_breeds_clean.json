@@ -1,0 +1,1082 @@
+[
+  {
+    "name": "Labrador Retriever",
+    "origin": "Canada (Newfoundland)",
+    "definition": "A friendly, intelligent, and outgoing breed, popular as a family pet and service dog.",
+    "funFact": "Labs have webbed toes, making them excellent swimmers!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, obesity, progressive retinal atrophy (PRA)",
+    "size": "Medium-Large (55-80 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Poodle",
+    "origin": "Germany/France",
+    "definition": "A highly intelligent and trainable breed with curly fur, available in Toy, Miniature, and Standard sizes.",
+    "funFact": "Poodles were originally bred as water retrievers!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, Addison's disease, progressive retinal atrophy",
+    "size": "Varies (Toy: 4-6 lbs, 10 inches; Miniature: 10-15 lbs, 11-15 inches; Standard: 40-70 lbs, 18-24 inches)"
+  },
+  {
+    "name": "Golden Retriever",
+    "origin": "Scotland",
+    "definition": "A friendly and loyal breed known for its golden coat and love of people.",
+    "funFact": "Golden Retrievers are often used as therapy dogs due to their gentle nature.",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, cancer, heart disease",
+    "size": "Medium-Large (55-75 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Bulldog",
+    "origin": "United Kingdom",
+    "definition": "A muscular, wrinkled-faced breed known for its calm and courageous nature.",
+    "funFact": "Bulldogs were originally bred for bull-baiting!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Respiratory issues, hip dysplasia, overheating",
+    "size": "Medium (40-50 lbs, 14-15 inches tall)"
+  },
+  {
+    "name": "Beagle",
+    "origin": "United Kingdom",
+    "definition": "A small to medium-sized breed known for its keen sense of smell and friendly temperament.",
+    "funFact": "Beagles were bred for hunting and have an incredible sense of smell!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Epilepsy, obesity, hip dysplasia",
+    "size": "Small-Medium (20-30 lbs, 13-15 inches tall)"
+  },
+  {
+    "name": "German Shepherd",
+    "origin": "Germany",
+    "definition": "A highly intelligent and versatile breed, commonly used in police and military work.",
+    "funFact": "German Shepherds are one of the most popular working dogs worldwide!",
+    "lifespan": "9-13 years",
+    "healthConcerns": "Hip dysplasia, degenerative myelopathy, bloat",
+    "size": "Large (50-90 lbs, 22-26 inches tall)"
+  },
+  {
+    "name": "French Bulldog",
+    "origin": "France",
+    "definition": "A small, muscular breed with distinctive bat-like ears and a playful personality.",
+    "funFact": "French Bulldogs can’t swim well due to their short legs and heavy heads!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Breathing problems, hip dysplasia, skin issues",
+    "size": "Small (16-28 lbs, 11-12 inches tall)"
+  },
+  {
+    "name": "Siberian Husky",
+    "origin": "Siberia (Russia)",
+    "definition": "A medium-sized working dog known for its endurance and thick double coat.",
+    "funFact": "Siberian Huskies have a strong pack mentality and love companionship!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, eye disorders, epilepsy",
+    "size": "Medium (35-60 lbs, 20-23.5 inches tall)"
+  },
+  {
+    "name": "Dachshund",
+    "origin": "Germany",
+    "definition": "A long-bodied, short-legged breed originally bred for hunting badgers.",
+    "funFact": "Dachshunds are often called 'wiener dogs' because of their long bodies!",
+    "lifespan": "12-16 years",
+    "healthConcerns": "Intervertebral disc disease (IVDD), obesity, diabetes",
+    "size": "Small (16-32 lbs, 8-9 inches tall)"
+  },
+  {
+    "name": "Rottweiler",
+    "origin": "Germany",
+    "definition": "A powerful and loyal breed originally used for herding livestock and pulling carts.",
+    "funFact": "Rottweilers were among the first guide dogs for the blind!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Hip dysplasia, heart disease, cancer",
+    "size": "Large (80-135 lbs, 22-27 inches tall)"
+  },
+  {
+    "name": "Labrador Retriever Variant",
+    "origin": "Canada (Newfoundland)",
+    "definition": "A friendly, intelligent, and outgoing breed, popular as a family pet and service dog.",
+    "funFact": "Labs have webbed toes, making them excellent swimmers!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, obesity, progressive retinal atrophy (PRA)",
+    "size": "Medium-Large (55-80 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Poodle Variant",
+    "origin": "Germany/France",
+    "definition": "A highly intelligent and trainable breed with curly fur, available in Toy, Miniature, and Standard sizes.",
+    "funFact": "Poodles were originally bred as water retrievers!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, Addison's disease, progressive retinal atrophy",
+    "size": "Varies (Toy: 4-6 lbs, 10 inches; Miniature: 10-15 lbs, 11-15 inches; Standard: 40-70 lbs, 18-24 inches)"
+  },
+  {
+    "name": "Golden Retriever Variant",
+    "origin": "Scotland",
+    "definition": "A friendly and loyal breed known for its golden coat and love of people.",
+    "funFact": "Golden Retrievers are often used as therapy dogs due to their gentle nature.",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, cancer, heart disease",
+    "size": "Medium-Large (55-75 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Bulldog Variant",
+    "origin": "United Kingdom",
+    "definition": "A muscular, wrinkled-faced breed known for its calm and courageous nature.",
+    "funFact": "Bulldogs were originally bred for bull-baiting!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Respiratory issues, hip dysplasia, overheating",
+    "size": "Medium (40-50 lbs, 14-15 inches tall)"
+  },
+  {
+    "name": "Beagle Variant",
+    "origin": "United Kingdom",
+    "definition": "A small to medium-sized breed known for its keen sense of smell and friendly temperament.",
+    "funFact": "Beagles were bred for hunting and have an incredible sense of smell!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Epilepsy, obesity, hip dysplasia",
+    "size": "Small-Medium (20-30 lbs, 13-15 inches tall)"
+  },
+  {
+    "name": "German Shepherd Variant",
+    "origin": "Germany",
+    "definition": "A highly intelligent and versatile breed, commonly used in police and military work.",
+    "funFact": "German Shepherds are one of the most popular working dogs worldwide!",
+    "lifespan": "9-13 years",
+    "healthConcerns": "Hip dysplasia, degenerative myelopathy, bloat",
+    "size": "Large (50-90 lbs, 22-26 inches tall)"
+  },
+  {
+    "name": "French Bulldog Variant",
+    "origin": "France",
+    "definition": "A small, muscular breed with distinctive bat-like ears and a playful personality.",
+    "funFact": "French Bulldogs can’t swim well due to their short legs and heavy heads!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Breathing problems, hip dysplasia, skin issues",
+    "size": "Small (16-28 lbs, 11-12 inches tall)"
+  },
+  {
+    "name": "Siberian Husky Variant",
+    "origin": "Siberia (Russia)",
+    "definition": "A medium-sized working dog known for its endurance and thick double coat.",
+    "funFact": "Siberian Huskies have a strong pack mentality and love companionship!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, eye disorders, epilepsy",
+    "size": "Medium (35-60 lbs, 20-23.5 inches tall)"
+  },
+  {
+    "name": "Dachshund Variant",
+    "origin": "Germany",
+    "definition": "A long-bodied, short-legged breed originally bred for hunting badgers.",
+    "funFact": "Dachshunds are often called 'wiener dogs' because of their long bodies!",
+    "lifespan": "12-16 years",
+    "healthConcerns": "Intervertebral disc disease (IVDD), obesity, diabetes",
+    "size": "Small (16-32 lbs, 8-9 inches tall)"
+  },
+  {
+    "name": "Rottweiler Variant",
+    "origin": "Germany",
+    "definition": "A powerful and loyal breed originally used for herding livestock and pulling carts.",
+    "funFact": "Rottweilers were among the first guide dogs for the blind!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Hip dysplasia, heart disease, cancer",
+    "size": "Large (80-135 lbs, 22-27 inches tall)"
+  },
+  {
+    "name": "Labrador Retriever Variant",
+    "origin": "Canada (Newfoundland)",
+    "definition": "A friendly, intelligent, and outgoing breed, popular as a family pet and service dog.",
+    "funFact": "Labs have webbed toes, making them excellent swimmers!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, obesity, progressive retinal atrophy (PRA)",
+    "size": "Medium-Large (55-80 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Poodle Variant",
+    "origin": "Germany/France",
+    "definition": "A highly intelligent and trainable breed with curly fur, available in Toy, Miniature, and Standard sizes.",
+    "funFact": "Poodles were originally bred as water retrievers!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, Addison's disease, progressive retinal atrophy",
+    "size": "Varies (Toy: 4-6 lbs, 10 inches; Miniature: 10-15 lbs, 11-15 inches; Standard: 40-70 lbs, 18-24 inches)"
+  },
+  {
+    "name": "Golden Retriever Variant",
+    "origin": "Scotland",
+    "definition": "A friendly and loyal breed known for its golden coat and love of people.",
+    "funFact": "Golden Retrievers are often used as therapy dogs due to their gentle nature.",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, cancer, heart disease",
+    "size": "Medium-Large (55-75 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Bulldog Variant",
+    "origin": "United Kingdom",
+    "definition": "A muscular, wrinkled-faced breed known for its calm and courageous nature.",
+    "funFact": "Bulldogs were originally bred for bull-baiting!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Respiratory issues, hip dysplasia, overheating",
+    "size": "Medium (40-50 lbs, 14-15 inches tall)"
+  },
+  {
+    "name": "Beagle Variant",
+    "origin": "United Kingdom",
+    "definition": "A small to medium-sized breed known for its keen sense of smell and friendly temperament.",
+    "funFact": "Beagles were bred for hunting and have an incredible sense of smell!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Epilepsy, obesity, hip dysplasia",
+    "size": "Small-Medium (20-30 lbs, 13-15 inches tall)"
+  },
+  {
+    "name": "German Shepherd Variant",
+    "origin": "Germany",
+    "definition": "A highly intelligent and versatile breed, commonly used in police and military work.",
+    "funFact": "German Shepherds are one of the most popular working dogs worldwide!",
+    "lifespan": "9-13 years",
+    "healthConcerns": "Hip dysplasia, degenerative myelopathy, bloat",
+    "size": "Large (50-90 lbs, 22-26 inches tall)"
+  },
+  {
+    "name": "French Bulldog Variant",
+    "origin": "France",
+    "definition": "A small, muscular breed with distinctive bat-like ears and a playful personality.",
+    "funFact": "French Bulldogs can’t swim well due to their short legs and heavy heads!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Breathing problems, hip dysplasia, skin issues",
+    "size": "Small (16-28 lbs, 11-12 inches tall)"
+  },
+  {
+    "name": "Siberian Husky Variant",
+    "origin": "Siberia (Russia)",
+    "definition": "A medium-sized working dog known for its endurance and thick double coat.",
+    "funFact": "Siberian Huskies have a strong pack mentality and love companionship!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, eye disorders, epilepsy",
+    "size": "Medium (35-60 lbs, 20-23.5 inches tall)"
+  },
+  {
+    "name": "Dachshund Variant",
+    "origin": "Germany",
+    "definition": "A long-bodied, short-legged breed originally bred for hunting badgers.",
+    "funFact": "Dachshunds are often called 'wiener dogs' because of their long bodies!",
+    "lifespan": "12-16 years",
+    "healthConcerns": "Intervertebral disc disease (IVDD), obesity, diabetes",
+    "size": "Small (16-32 lbs, 8-9 inches tall)"
+  },
+  {
+    "name": "Rottweiler Variant",
+    "origin": "Germany",
+    "definition": "A powerful and loyal breed originally used for herding livestock and pulling carts.",
+    "funFact": "Rottweilers were among the first guide dogs for the blind!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Hip dysplasia, heart disease, cancer",
+    "size": "Large (80-135 lbs, 22-27 inches tall)"
+  },
+  {
+    "name": "Labrador Retriever Variant",
+    "origin": "Canada (Newfoundland)",
+    "definition": "A friendly, intelligent, and outgoing breed, popular as a family pet and service dog.",
+    "funFact": "Labs have webbed toes, making them excellent swimmers!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, obesity, progressive retinal atrophy (PRA)",
+    "size": "Medium-Large (55-80 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Poodle Variant",
+    "origin": "Germany/France",
+    "definition": "A highly intelligent and trainable breed with curly fur, available in Toy, Miniature, and Standard sizes.",
+    "funFact": "Poodles were originally bred as water retrievers!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, Addison's disease, progressive retinal atrophy",
+    "size": "Varies (Toy: 4-6 lbs, 10 inches; Miniature: 10-15 lbs, 11-15 inches; Standard: 40-70 lbs, 18-24 inches)"
+  },
+  {
+    "name": "Golden Retriever Variant",
+    "origin": "Scotland",
+    "definition": "A friendly and loyal breed known for its golden coat and love of people.",
+    "funFact": "Golden Retrievers are often used as therapy dogs due to their gentle nature.",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, cancer, heart disease",
+    "size": "Medium-Large (55-75 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Bulldog Variant",
+    "origin": "United Kingdom",
+    "definition": "A muscular, wrinkled-faced breed known for its calm and courageous nature.",
+    "funFact": "Bulldogs were originally bred for bull-baiting!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Respiratory issues, hip dysplasia, overheating",
+    "size": "Medium (40-50 lbs, 14-15 inches tall)"
+  },
+  {
+    "name": "Beagle Variant",
+    "origin": "United Kingdom",
+    "definition": "A small to medium-sized breed known for its keen sense of smell and friendly temperament.",
+    "funFact": "Beagles were bred for hunting and have an incredible sense of smell!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Epilepsy, obesity, hip dysplasia",
+    "size": "Small-Medium (20-30 lbs, 13-15 inches tall)"
+  },
+  {
+    "name": "German Shepherd Variant",
+    "origin": "Germany",
+    "definition": "A highly intelligent and versatile breed, commonly used in police and military work.",
+    "funFact": "German Shepherds are one of the most popular working dogs worldwide!",
+    "lifespan": "9-13 years",
+    "healthConcerns": "Hip dysplasia, degenerative myelopathy, bloat",
+    "size": "Large (50-90 lbs, 22-26 inches tall)"
+  },
+  {
+    "name": "French Bulldog Variant",
+    "origin": "France",
+    "definition": "A small, muscular breed with distinctive bat-like ears and a playful personality.",
+    "funFact": "French Bulldogs can’t swim well due to their short legs and heavy heads!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Breathing problems, hip dysplasia, skin issues",
+    "size": "Small (16-28 lbs, 11-12 inches tall)"
+  },
+  {
+    "name": "Siberian Husky Variant",
+    "origin": "Siberia (Russia)",
+    "definition": "A medium-sized working dog known for its endurance and thick double coat.",
+    "funFact": "Siberian Huskies have a strong pack mentality and love companionship!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, eye disorders, epilepsy",
+    "size": "Medium (35-60 lbs, 20-23.5 inches tall)"
+  },
+  {
+    "name": "Dachshund Variant",
+    "origin": "Germany",
+    "definition": "A long-bodied, short-legged breed originally bred for hunting badgers.",
+    "funFact": "Dachshunds are often called 'wiener dogs' because of their long bodies!",
+    "lifespan": "12-16 years",
+    "healthConcerns": "Intervertebral disc disease (IVDD), obesity, diabetes",
+    "size": "Small (16-32 lbs, 8-9 inches tall)"
+  },
+  {
+    "name": "Rottweiler Variant",
+    "origin": "Germany",
+    "definition": "A powerful and loyal breed originally used for herding livestock and pulling carts.",
+    "funFact": "Rottweilers were among the first guide dogs for the blind!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Hip dysplasia, heart disease, cancer",
+    "size": "Large (80-135 lbs, 22-27 inches tall)"
+  },
+  {
+    "name": "Labrador Retriever Variant",
+    "origin": "Canada (Newfoundland)",
+    "definition": "A friendly, intelligent, and outgoing breed, popular as a family pet and service dog.",
+    "funFact": "Labs have webbed toes, making them excellent swimmers!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, obesity, progressive retinal atrophy (PRA)",
+    "size": "Medium-Large (55-80 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Poodle Variant",
+    "origin": "Germany/France",
+    "definition": "A highly intelligent and trainable breed with curly fur, available in Toy, Miniature, and Standard sizes.",
+    "funFact": "Poodles were originally bred as water retrievers!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, Addison's disease, progressive retinal atrophy",
+    "size": "Varies (Toy: 4-6 lbs, 10 inches; Miniature: 10-15 lbs, 11-15 inches; Standard: 40-70 lbs, 18-24 inches)"
+  },
+  {
+    "name": "Golden Retriever Variant",
+    "origin": "Scotland",
+    "definition": "A friendly and loyal breed known for its golden coat and love of people.",
+    "funFact": "Golden Retrievers are often used as therapy dogs due to their gentle nature.",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, cancer, heart disease",
+    "size": "Medium-Large (55-75 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Bulldog Variant",
+    "origin": "United Kingdom",
+    "definition": "A muscular, wrinkled-faced breed known for its calm and courageous nature.",
+    "funFact": "Bulldogs were originally bred for bull-baiting!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Respiratory issues, hip dysplasia, overheating",
+    "size": "Medium (40-50 lbs, 14-15 inches tall)"
+  },
+  {
+    "name": "Beagle Variant",
+    "origin": "United Kingdom",
+    "definition": "A small to medium-sized breed known for its keen sense of smell and friendly temperament.",
+    "funFact": "Beagles were bred for hunting and have an incredible sense of smell!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Epilepsy, obesity, hip dysplasia",
+    "size": "Small-Medium (20-30 lbs, 13-15 inches tall)"
+  },
+  {
+    "name": "German Shepherd Variant",
+    "origin": "Germany",
+    "definition": "A highly intelligent and versatile breed, commonly used in police and military work.",
+    "funFact": "German Shepherds are one of the most popular working dogs worldwide!",
+    "lifespan": "9-13 years",
+    "healthConcerns": "Hip dysplasia, degenerative myelopathy, bloat",
+    "size": "Large (50-90 lbs, 22-26 inches tall)"
+  },
+  {
+    "name": "French Bulldog Variant",
+    "origin": "France",
+    "definition": "A small, muscular breed with distinctive bat-like ears and a playful personality.",
+    "funFact": "French Bulldogs can’t swim well due to their short legs and heavy heads!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Breathing problems, hip dysplasia, skin issues",
+    "size": "Small (16-28 lbs, 11-12 inches tall)"
+  },
+  {
+    "name": "Siberian Husky Variant",
+    "origin": "Siberia (Russia)",
+    "definition": "A medium-sized working dog known for its endurance and thick double coat.",
+    "funFact": "Siberian Huskies have a strong pack mentality and love companionship!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, eye disorders, epilepsy",
+    "size": "Medium (35-60 lbs, 20-23.5 inches tall)"
+  },
+  {
+    "name": "Dachshund Variant",
+    "origin": "Germany",
+    "definition": "A long-bodied, short-legged breed originally bred for hunting badgers.",
+    "funFact": "Dachshunds are often called 'wiener dogs' because of their long bodies!",
+    "lifespan": "12-16 years",
+    "healthConcerns": "Intervertebral disc disease (IVDD), obesity, diabetes",
+    "size": "Small (16-32 lbs, 8-9 inches tall)"
+  },
+  {
+    "name": "Rottweiler Variant",
+    "origin": "Germany",
+    "definition": "A powerful and loyal breed originally used for herding livestock and pulling carts.",
+    "funFact": "Rottweilers were among the first guide dogs for the blind!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Hip dysplasia, heart disease, cancer",
+    "size": "Large (80-135 lbs, 22-27 inches tall)"
+  },
+  {
+    "name": "Labrador Retriever Variant",
+    "origin": "Canada (Newfoundland)",
+    "definition": "A friendly, intelligent, and outgoing breed, popular as a family pet and service dog.",
+    "funFact": "Labs have webbed toes, making them excellent swimmers!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, obesity, progressive retinal atrophy (PRA)",
+    "size": "Medium-Large (55-80 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Poodle Variant",
+    "origin": "Germany/France",
+    "definition": "A highly intelligent and trainable breed with curly fur, available in Toy, Miniature, and Standard sizes.",
+    "funFact": "Poodles were originally bred as water retrievers!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, Addison's disease, progressive retinal atrophy",
+    "size": "Varies (Toy: 4-6 lbs, 10 inches; Miniature: 10-15 lbs, 11-15 inches; Standard: 40-70 lbs, 18-24 inches)"
+  },
+  {
+    "name": "Golden Retriever Variant",
+    "origin": "Scotland",
+    "definition": "A friendly and loyal breed known for its golden coat and love of people.",
+    "funFact": "Golden Retrievers are often used as therapy dogs due to their gentle nature.",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, cancer, heart disease",
+    "size": "Medium-Large (55-75 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Bulldog Variant",
+    "origin": "United Kingdom",
+    "definition": "A muscular, wrinkled-faced breed known for its calm and courageous nature.",
+    "funFact": "Bulldogs were originally bred for bull-baiting!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Respiratory issues, hip dysplasia, overheating",
+    "size": "Medium (40-50 lbs, 14-15 inches tall)"
+  },
+  {
+    "name": "Beagle Variant",
+    "origin": "United Kingdom",
+    "definition": "A small to medium-sized breed known for its keen sense of smell and friendly temperament.",
+    "funFact": "Beagles were bred for hunting and have an incredible sense of smell!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Epilepsy, obesity, hip dysplasia",
+    "size": "Small-Medium (20-30 lbs, 13-15 inches tall)"
+  },
+  {
+    "name": "German Shepherd Variant",
+    "origin": "Germany",
+    "definition": "A highly intelligent and versatile breed, commonly used in police and military work.",
+    "funFact": "German Shepherds are one of the most popular working dogs worldwide!",
+    "lifespan": "9-13 years",
+    "healthConcerns": "Hip dysplasia, degenerative myelopathy, bloat",
+    "size": "Large (50-90 lbs, 22-26 inches tall)"
+  },
+  {
+    "name": "French Bulldog Variant",
+    "origin": "France",
+    "definition": "A small, muscular breed with distinctive bat-like ears and a playful personality.",
+    "funFact": "French Bulldogs can’t swim well due to their short legs and heavy heads!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Breathing problems, hip dysplasia, skin issues",
+    "size": "Small (16-28 lbs, 11-12 inches tall)"
+  },
+  {
+    "name": "Siberian Husky Variant",
+    "origin": "Siberia (Russia)",
+    "definition": "A medium-sized working dog known for its endurance and thick double coat.",
+    "funFact": "Siberian Huskies have a strong pack mentality and love companionship!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, eye disorders, epilepsy",
+    "size": "Medium (35-60 lbs, 20-23.5 inches tall)"
+  },
+  {
+    "name": "Dachshund Variant",
+    "origin": "Germany",
+    "definition": "A long-bodied, short-legged breed originally bred for hunting badgers.",
+    "funFact": "Dachshunds are often called 'wiener dogs' because of their long bodies!",
+    "lifespan": "12-16 years",
+    "healthConcerns": "Intervertebral disc disease (IVDD), obesity, diabetes",
+    "size": "Small (16-32 lbs, 8-9 inches tall)"
+  },
+  {
+    "name": "Rottweiler Variant",
+    "origin": "Germany",
+    "definition": "A powerful and loyal breed originally used for herding livestock and pulling carts.",
+    "funFact": "Rottweilers were among the first guide dogs for the blind!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Hip dysplasia, heart disease, cancer",
+    "size": "Large (80-135 lbs, 22-27 inches tall)"
+  },
+  {
+    "name": "Labrador Retriever Variant",
+    "origin": "Canada (Newfoundland)",
+    "definition": "A friendly, intelligent, and outgoing breed, popular as a family pet and service dog.",
+    "funFact": "Labs have webbed toes, making them excellent swimmers!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, obesity, progressive retinal atrophy (PRA)",
+    "size": "Medium-Large (55-80 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Poodle Variant",
+    "origin": "Germany/France",
+    "definition": "A highly intelligent and trainable breed with curly fur, available in Toy, Miniature, and Standard sizes.",
+    "funFact": "Poodles were originally bred as water retrievers!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, Addison's disease, progressive retinal atrophy",
+    "size": "Varies (Toy: 4-6 lbs, 10 inches; Miniature: 10-15 lbs, 11-15 inches; Standard: 40-70 lbs, 18-24 inches)"
+  },
+  {
+    "name": "Golden Retriever Variant",
+    "origin": "Scotland",
+    "definition": "A friendly and loyal breed known for its golden coat and love of people.",
+    "funFact": "Golden Retrievers are often used as therapy dogs due to their gentle nature.",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, cancer, heart disease",
+    "size": "Medium-Large (55-75 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Bulldog Variant",
+    "origin": "United Kingdom",
+    "definition": "A muscular, wrinkled-faced breed known for its calm and courageous nature.",
+    "funFact": "Bulldogs were originally bred for bull-baiting!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Respiratory issues, hip dysplasia, overheating",
+    "size": "Medium (40-50 lbs, 14-15 inches tall)"
+  },
+  {
+    "name": "Beagle Variant",
+    "origin": "United Kingdom",
+    "definition": "A small to medium-sized breed known for its keen sense of smell and friendly temperament.",
+    "funFact": "Beagles were bred for hunting and have an incredible sense of smell!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Epilepsy, obesity, hip dysplasia",
+    "size": "Small-Medium (20-30 lbs, 13-15 inches tall)"
+  },
+  {
+    "name": "German Shepherd Variant",
+    "origin": "Germany",
+    "definition": "A highly intelligent and versatile breed, commonly used in police and military work.",
+    "funFact": "German Shepherds are one of the most popular working dogs worldwide!",
+    "lifespan": "9-13 years",
+    "healthConcerns": "Hip dysplasia, degenerative myelopathy, bloat",
+    "size": "Large (50-90 lbs, 22-26 inches tall)"
+  },
+  {
+    "name": "French Bulldog Variant",
+    "origin": "France",
+    "definition": "A small, muscular breed with distinctive bat-like ears and a playful personality.",
+    "funFact": "French Bulldogs can’t swim well due to their short legs and heavy heads!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Breathing problems, hip dysplasia, skin issues",
+    "size": "Small (16-28 lbs, 11-12 inches tall)"
+  },
+  {
+    "name": "Siberian Husky Variant",
+    "origin": "Siberia (Russia)",
+    "definition": "A medium-sized working dog known for its endurance and thick double coat.",
+    "funFact": "Siberian Huskies have a strong pack mentality and love companionship!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, eye disorders, epilepsy",
+    "size": "Medium (35-60 lbs, 20-23.5 inches tall)"
+  },
+  {
+    "name": "Dachshund Variant",
+    "origin": "Germany",
+    "definition": "A long-bodied, short-legged breed originally bred for hunting badgers.",
+    "funFact": "Dachshunds are often called 'wiener dogs' because of their long bodies!",
+    "lifespan": "12-16 years",
+    "healthConcerns": "Intervertebral disc disease (IVDD), obesity, diabetes",
+    "size": "Small (16-32 lbs, 8-9 inches tall)"
+  },
+  {
+    "name": "Rottweiler Variant",
+    "origin": "Germany",
+    "definition": "A powerful and loyal breed originally used for herding livestock and pulling carts.",
+    "funFact": "Rottweilers were among the first guide dogs for the blind!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Hip dysplasia, heart disease, cancer",
+    "size": "Large (80-135 lbs, 22-27 inches tall)"
+  },
+  {
+    "name": "Labrador Retriever Variant",
+    "origin": "Canada (Newfoundland)",
+    "definition": "A friendly, intelligent, and outgoing breed, popular as a family pet and service dog.",
+    "funFact": "Labs have webbed toes, making them excellent swimmers!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, obesity, progressive retinal atrophy (PRA)",
+    "size": "Medium-Large (55-80 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Poodle Variant",
+    "origin": "Germany/France",
+    "definition": "A highly intelligent and trainable breed with curly fur, available in Toy, Miniature, and Standard sizes.",
+    "funFact": "Poodles were originally bred as water retrievers!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, Addison's disease, progressive retinal atrophy",
+    "size": "Varies (Toy: 4-6 lbs, 10 inches; Miniature: 10-15 lbs, 11-15 inches; Standard: 40-70 lbs, 18-24 inches)"
+  },
+  {
+    "name": "Golden Retriever Variant",
+    "origin": "Scotland",
+    "definition": "A friendly and loyal breed known for its golden coat and love of people.",
+    "funFact": "Golden Retrievers are often used as therapy dogs due to their gentle nature.",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, cancer, heart disease",
+    "size": "Medium-Large (55-75 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Bulldog Variant",
+    "origin": "United Kingdom",
+    "definition": "A muscular, wrinkled-faced breed known for its calm and courageous nature.",
+    "funFact": "Bulldogs were originally bred for bull-baiting!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Respiratory issues, hip dysplasia, overheating",
+    "size": "Medium (40-50 lbs, 14-15 inches tall)"
+  },
+  {
+    "name": "Beagle Variant",
+    "origin": "United Kingdom",
+    "definition": "A small to medium-sized breed known for its keen sense of smell and friendly temperament.",
+    "funFact": "Beagles were bred for hunting and have an incredible sense of smell!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Epilepsy, obesity, hip dysplasia",
+    "size": "Small-Medium (20-30 lbs, 13-15 inches tall)"
+  },
+  {
+    "name": "German Shepherd Variant",
+    "origin": "Germany",
+    "definition": "A highly intelligent and versatile breed, commonly used in police and military work.",
+    "funFact": "German Shepherds are one of the most popular working dogs worldwide!",
+    "lifespan": "9-13 years",
+    "healthConcerns": "Hip dysplasia, degenerative myelopathy, bloat",
+    "size": "Large (50-90 lbs, 22-26 inches tall)"
+  },
+  {
+    "name": "French Bulldog Variant",
+    "origin": "France",
+    "definition": "A small, muscular breed with distinctive bat-like ears and a playful personality.",
+    "funFact": "French Bulldogs can’t swim well due to their short legs and heavy heads!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Breathing problems, hip dysplasia, skin issues",
+    "size": "Small (16-28 lbs, 11-12 inches tall)"
+  },
+  {
+    "name": "Siberian Husky Variant",
+    "origin": "Siberia (Russia)",
+    "definition": "A medium-sized working dog known for its endurance and thick double coat.",
+    "funFact": "Siberian Huskies have a strong pack mentality and love companionship!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, eye disorders, epilepsy",
+    "size": "Medium (35-60 lbs, 20-23.5 inches tall)"
+  },
+  {
+    "name": "Dachshund Variant",
+    "origin": "Germany",
+    "definition": "A long-bodied, short-legged breed originally bred for hunting badgers.",
+    "funFact": "Dachshunds are often called 'wiener dogs' because of their long bodies!",
+    "lifespan": "12-16 years",
+    "healthConcerns": "Intervertebral disc disease (IVDD), obesity, diabetes",
+    "size": "Small (16-32 lbs, 8-9 inches tall)"
+  },
+  {
+    "name": "Rottweiler Variant",
+    "origin": "Germany",
+    "definition": "A powerful and loyal breed originally used for herding livestock and pulling carts.",
+    "funFact": "Rottweilers were among the first guide dogs for the blind!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Hip dysplasia, heart disease, cancer",
+    "size": "Large (80-135 lbs, 22-27 inches tall)"
+  },
+  {
+    "name": "Labrador Retriever Variant",
+    "origin": "Canada (Newfoundland)",
+    "definition": "A friendly, intelligent, and outgoing breed, popular as a family pet and service dog.",
+    "funFact": "Labs have webbed toes, making them excellent swimmers!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, obesity, progressive retinal atrophy (PRA)",
+    "size": "Medium-Large (55-80 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Poodle Variant",
+    "origin": "Germany/France",
+    "definition": "A highly intelligent and trainable breed with curly fur, available in Toy, Miniature, and Standard sizes.",
+    "funFact": "Poodles were originally bred as water retrievers!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, Addison's disease, progressive retinal atrophy",
+    "size": "Varies (Toy: 4-6 lbs, 10 inches; Miniature: 10-15 lbs, 11-15 inches; Standard: 40-70 lbs, 18-24 inches)"
+  },
+  {
+    "name": "Golden Retriever Variant",
+    "origin": "Scotland",
+    "definition": "A friendly and loyal breed known for its golden coat and love of people.",
+    "funFact": "Golden Retrievers are often used as therapy dogs due to their gentle nature.",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, cancer, heart disease",
+    "size": "Medium-Large (55-75 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Bulldog Variant",
+    "origin": "United Kingdom",
+    "definition": "A muscular, wrinkled-faced breed known for its calm and courageous nature.",
+    "funFact": "Bulldogs were originally bred for bull-baiting!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Respiratory issues, hip dysplasia, overheating",
+    "size": "Medium (40-50 lbs, 14-15 inches tall)"
+  },
+  {
+    "name": "Beagle Variant",
+    "origin": "United Kingdom",
+    "definition": "A small to medium-sized breed known for its keen sense of smell and friendly temperament.",
+    "funFact": "Beagles were bred for hunting and have an incredible sense of smell!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Epilepsy, obesity, hip dysplasia",
+    "size": "Small-Medium (20-30 lbs, 13-15 inches tall)"
+  },
+  {
+    "name": "German Shepherd Variant",
+    "origin": "Germany",
+    "definition": "A highly intelligent and versatile breed, commonly used in police and military work.",
+    "funFact": "German Shepherds are one of the most popular working dogs worldwide!",
+    "lifespan": "9-13 years",
+    "healthConcerns": "Hip dysplasia, degenerative myelopathy, bloat",
+    "size": "Large (50-90 lbs, 22-26 inches tall)"
+  },
+  {
+    "name": "French Bulldog Variant",
+    "origin": "France",
+    "definition": "A small, muscular breed with distinctive bat-like ears and a playful personality.",
+    "funFact": "French Bulldogs can’t swim well due to their short legs and heavy heads!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Breathing problems, hip dysplasia, skin issues",
+    "size": "Small (16-28 lbs, 11-12 inches tall)"
+  },
+  {
+    "name": "Siberian Husky Variant",
+    "origin": "Siberia (Russia)",
+    "definition": "A medium-sized working dog known for its endurance and thick double coat.",
+    "funFact": "Siberian Huskies have a strong pack mentality and love companionship!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, eye disorders, epilepsy",
+    "size": "Medium (35-60 lbs, 20-23.5 inches tall)"
+  },
+  {
+    "name": "Dachshund Variant",
+    "origin": "Germany",
+    "definition": "A long-bodied, short-legged breed originally bred for hunting badgers.",
+    "funFact": "Dachshunds are often called 'wiener dogs' because of their long bodies!",
+    "lifespan": "12-16 years",
+    "healthConcerns": "Intervertebral disc disease (IVDD), obesity, diabetes",
+    "size": "Small (16-32 lbs, 8-9 inches tall)"
+  },
+  {
+    "name": "Rottweiler Variant",
+    "origin": "Germany",
+    "definition": "A powerful and loyal breed originally used for herding livestock and pulling carts.",
+    "funFact": "Rottweilers were among the first guide dogs for the blind!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Hip dysplasia, heart disease, cancer",
+    "size": "Large (80-135 lbs, 22-27 inches tall)"
+  },
+  {
+    "name": "Labrador Retriever Variant",
+    "origin": "Canada (Newfoundland)",
+    "definition": "A friendly, intelligent, and outgoing breed, popular as a family pet and service dog.",
+    "funFact": "Labs have webbed toes, making them excellent swimmers!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, obesity, progressive retinal atrophy (PRA)",
+    "size": "Medium-Large (55-80 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Poodle Variant",
+    "origin": "Germany/France",
+    "definition": "A highly intelligent and trainable breed with curly fur, available in Toy, Miniature, and Standard sizes.",
+    "funFact": "Poodles were originally bred as water retrievers!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, Addison's disease, progressive retinal atrophy",
+    "size": "Varies (Toy: 4-6 lbs, 10 inches; Miniature: 10-15 lbs, 11-15 inches; Standard: 40-70 lbs, 18-24 inches)"
+  },
+  {
+    "name": "Golden Retriever Variant",
+    "origin": "Scotland",
+    "definition": "A friendly and loyal breed known for its golden coat and love of people.",
+    "funFact": "Golden Retrievers are often used as therapy dogs due to their gentle nature.",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, cancer, heart disease",
+    "size": "Medium-Large (55-75 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Bulldog Variant",
+    "origin": "United Kingdom",
+    "definition": "A muscular, wrinkled-faced breed known for its calm and courageous nature.",
+    "funFact": "Bulldogs were originally bred for bull-baiting!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Respiratory issues, hip dysplasia, overheating",
+    "size": "Medium (40-50 lbs, 14-15 inches tall)"
+  },
+  {
+    "name": "Beagle Variant",
+    "origin": "United Kingdom",
+    "definition": "A small to medium-sized breed known for its keen sense of smell and friendly temperament.",
+    "funFact": "Beagles were bred for hunting and have an incredible sense of smell!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Epilepsy, obesity, hip dysplasia",
+    "size": "Small-Medium (20-30 lbs, 13-15 inches tall)"
+  },
+  {
+    "name": "German Shepherd Variant",
+    "origin": "Germany",
+    "definition": "A highly intelligent and versatile breed, commonly used in police and military work.",
+    "funFact": "German Shepherds are one of the most popular working dogs worldwide!",
+    "lifespan": "9-13 years",
+    "healthConcerns": "Hip dysplasia, degenerative myelopathy, bloat",
+    "size": "Large (50-90 lbs, 22-26 inches tall)"
+  },
+  {
+    "name": "French Bulldog Variant",
+    "origin": "France",
+    "definition": "A small, muscular breed with distinctive bat-like ears and a playful personality.",
+    "funFact": "French Bulldogs can’t swim well due to their short legs and heavy heads!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Breathing problems, hip dysplasia, skin issues",
+    "size": "Small (16-28 lbs, 11-12 inches tall)"
+  },
+  {
+    "name": "Siberian Husky Variant",
+    "origin": "Siberia (Russia)",
+    "definition": "A medium-sized working dog known for its endurance and thick double coat.",
+    "funFact": "Siberian Huskies have a strong pack mentality and love companionship!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, eye disorders, epilepsy",
+    "size": "Medium (35-60 lbs, 20-23.5 inches tall)"
+  },
+  {
+    "name": "Dachshund Variant",
+    "origin": "Germany",
+    "definition": "A long-bodied, short-legged breed originally bred for hunting badgers.",
+    "funFact": "Dachshunds are often called 'wiener dogs' because of their long bodies!",
+    "lifespan": "12-16 years",
+    "healthConcerns": "Intervertebral disc disease (IVDD), obesity, diabetes",
+    "size": "Small (16-32 lbs, 8-9 inches tall)"
+  },
+  {
+    "name": "Rottweiler Variant",
+    "origin": "Germany",
+    "definition": "A powerful and loyal breed originally used for herding livestock and pulling carts.",
+    "funFact": "Rottweilers were among the first guide dogs for the blind!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Hip dysplasia, heart disease, cancer",
+    "size": "Large (80-135 lbs, 22-27 inches tall)"
+  },
+  {
+    "name": "Labrador Retriever Variant",
+    "origin": "Canada (Newfoundland)",
+    "definition": "A friendly, intelligent, and outgoing breed, popular as a family pet and service dog.",
+    "funFact": "Labs have webbed toes, making them excellent swimmers!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, obesity, progressive retinal atrophy (PRA)",
+    "size": "Medium-Large (55-80 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Poodle Variant",
+    "origin": "Germany/France",
+    "definition": "A highly intelligent and trainable breed with curly fur, available in Toy, Miniature, and Standard sizes.",
+    "funFact": "Poodles were originally bred as water retrievers!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, Addison's disease, progressive retinal atrophy",
+    "size": "Varies (Toy: 4-6 lbs, 10 inches; Miniature: 10-15 lbs, 11-15 inches; Standard: 40-70 lbs, 18-24 inches)"
+  },
+  {
+    "name": "Golden Retriever Variant",
+    "origin": "Scotland",
+    "definition": "A friendly and loyal breed known for its golden coat and love of people.",
+    "funFact": "Golden Retrievers are often used as therapy dogs due to their gentle nature.",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, cancer, heart disease",
+    "size": "Medium-Large (55-75 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Bulldog Variant",
+    "origin": "United Kingdom",
+    "definition": "A muscular, wrinkled-faced breed known for its calm and courageous nature.",
+    "funFact": "Bulldogs were originally bred for bull-baiting!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Respiratory issues, hip dysplasia, overheating",
+    "size": "Medium (40-50 lbs, 14-15 inches tall)"
+  },
+  {
+    "name": "Beagle Variant",
+    "origin": "United Kingdom",
+    "definition": "A small to medium-sized breed known for its keen sense of smell and friendly temperament.",
+    "funFact": "Beagles were bred for hunting and have an incredible sense of smell!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Epilepsy, obesity, hip dysplasia",
+    "size": "Small-Medium (20-30 lbs, 13-15 inches tall)"
+  },
+  {
+    "name": "German Shepherd Variant",
+    "origin": "Germany",
+    "definition": "A highly intelligent and versatile breed, commonly used in police and military work.",
+    "funFact": "German Shepherds are one of the most popular working dogs worldwide!",
+    "lifespan": "9-13 years",
+    "healthConcerns": "Hip dysplasia, degenerative myelopathy, bloat",
+    "size": "Large (50-90 lbs, 22-26 inches tall)"
+  },
+  {
+    "name": "French Bulldog Variant",
+    "origin": "France",
+    "definition": "A small, muscular breed with distinctive bat-like ears and a playful personality.",
+    "funFact": "French Bulldogs can’t swim well due to their short legs and heavy heads!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Breathing problems, hip dysplasia, skin issues",
+    "size": "Small (16-28 lbs, 11-12 inches tall)"
+  },
+  {
+    "name": "Siberian Husky Variant",
+    "origin": "Siberia (Russia)",
+    "definition": "A medium-sized working dog known for its endurance and thick double coat.",
+    "funFact": "Siberian Huskies have a strong pack mentality and love companionship!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, eye disorders, epilepsy",
+    "size": "Medium (35-60 lbs, 20-23.5 inches tall)"
+  },
+  {
+    "name": "Dachshund Variant",
+    "origin": "Germany",
+    "definition": "A long-bodied, short-legged breed originally bred for hunting badgers.",
+    "funFact": "Dachshunds are often called 'wiener dogs' because of their long bodies!",
+    "lifespan": "12-16 years",
+    "healthConcerns": "Intervertebral disc disease (IVDD), obesity, diabetes",
+    "size": "Small (16-32 lbs, 8-9 inches tall)"
+  },
+  {
+    "name": "Rottweiler Variant",
+    "origin": "Germany",
+    "definition": "A powerful and loyal breed originally used for herding livestock and pulling carts.",
+    "funFact": "Rottweilers were among the first guide dogs for the blind!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Hip dysplasia, heart disease, cancer",
+    "size": "Large (80-135 lbs, 22-27 inches tall)"
+  },
+  {
+    "name": "Labrador Retriever Variant",
+    "origin": "Canada (Newfoundland)",
+    "definition": "A friendly, intelligent, and outgoing breed, popular as a family pet and service dog.",
+    "funFact": "Labs have webbed toes, making them excellent swimmers!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, obesity, progressive retinal atrophy (PRA)",
+    "size": "Medium-Large (55-80 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Poodle Variant",
+    "origin": "Germany/France",
+    "definition": "A highly intelligent and trainable breed with curly fur, available in Toy, Miniature, and Standard sizes.",
+    "funFact": "Poodles were originally bred as water retrievers!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, Addison's disease, progressive retinal atrophy",
+    "size": "Varies (Toy: 4-6 lbs, 10 inches; Miniature: 10-15 lbs, 11-15 inches; Standard: 40-70 lbs, 18-24 inches)"
+  },
+  {
+    "name": "Golden Retriever Variant",
+    "origin": "Scotland",
+    "definition": "A friendly and loyal breed known for its golden coat and love of people.",
+    "funFact": "Golden Retrievers are often used as therapy dogs due to their gentle nature.",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Hip dysplasia, cancer, heart disease",
+    "size": "Medium-Large (55-75 lbs, 21-24 inches tall)"
+  },
+  {
+    "name": "Bulldog Variant",
+    "origin": "United Kingdom",
+    "definition": "A muscular, wrinkled-faced breed known for its calm and courageous nature.",
+    "funFact": "Bulldogs were originally bred for bull-baiting!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Respiratory issues, hip dysplasia, overheating",
+    "size": "Medium (40-50 lbs, 14-15 inches tall)"
+  },
+  {
+    "name": "Beagle Variant",
+    "origin": "United Kingdom",
+    "definition": "A small to medium-sized breed known for its keen sense of smell and friendly temperament.",
+    "funFact": "Beagles were bred for hunting and have an incredible sense of smell!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Epilepsy, obesity, hip dysplasia",
+    "size": "Small-Medium (20-30 lbs, 13-15 inches tall)"
+  },
+  {
+    "name": "German Shepherd Variant",
+    "origin": "Germany",
+    "definition": "A highly intelligent and versatile breed, commonly used in police and military work.",
+    "funFact": "German Shepherds are one of the most popular working dogs worldwide!",
+    "lifespan": "9-13 years",
+    "healthConcerns": "Hip dysplasia, degenerative myelopathy, bloat",
+    "size": "Large (50-90 lbs, 22-26 inches tall)"
+  },
+  {
+    "name": "French Bulldog Variant",
+    "origin": "France",
+    "definition": "A small, muscular breed with distinctive bat-like ears and a playful personality.",
+    "funFact": "French Bulldogs can’t swim well due to their short legs and heavy heads!",
+    "lifespan": "10-12 years",
+    "healthConcerns": "Breathing problems, hip dysplasia, skin issues",
+    "size": "Small (16-28 lbs, 11-12 inches tall)"
+  },
+  {
+    "name": "Siberian Husky Variant",
+    "origin": "Siberia (Russia)",
+    "definition": "A medium-sized working dog known for its endurance and thick double coat.",
+    "funFact": "Siberian Huskies have a strong pack mentality and love companionship!",
+    "lifespan": "12-15 years",
+    "healthConcerns": "Hip dysplasia, eye disorders, epilepsy",
+    "size": "Medium (35-60 lbs, 20-23.5 inches tall)"
+  },
+  {
+    "name": "Dachshund Variant",
+    "origin": "Germany",
+    "definition": "A long-bodied, short-legged breed originally bred for hunting badgers.",
+    "funFact": "Dachshunds are often called 'wiener dogs' because of their long bodies!",
+    "lifespan": "12-16 years",
+    "healthConcerns": "Intervertebral disc disease (IVDD), obesity, diabetes",
+    "size": "Small (16-32 lbs, 8-9 inches tall)"
+  },
+  {
+    "name": "Rottweiler Variant",
+    "origin": "Germany",
+    "definition": "A powerful and loyal breed originally used for herding livestock and pulling carts.",
+    "funFact": "Rottweilers were among the first guide dogs for the blind!",
+    "lifespan": "8-10 years",
+    "healthConcerns": "Hip dysplasia, heart disease, cancer",
+    "size": "Large (80-135 lbs, 22-27 inches tall)"
+  }
+]
