@@ -1,0 +1,966 @@
+{
+  "n02085620-Chihuahua": {
+    "name": "Chihuahua",
+    "description": "The Chihuahua is the smallest breed of dog, known for its lively and devoted personality.",
+    "origin": "Mexico",
+    "group": "Toy",
+    "image": "assets/breeds/chihuahua.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chihuahua_(dog_breed)"
+  },
+  "n02085782-Japanese_spaniel": {
+    "name": "Japanese Chin",
+    "description": "The Japanese Chin, also known as the Japanese Spaniel, is a toy dog breed with a distinctive heritage, known for its cat-like behaviors and affectionate nature.",
+    "origin": "Japan",
+    "group": "Toy",
+    "image": "assets/breeds/japanese_chin.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Japanese_Chin"
+  },
+  "n02085936-Maltese_dog": {
+    "name": "Maltese",
+    "description": "The Maltese is a small toy dog breed with a silky white coat, known for its gentle and affectionate temperament.",
+    "origin": "Italy",
+    "group": "Toy",
+    "image": "assets/breeds/maltese.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Maltese_dog"
+  },
+  "n02086079-Pekinese": {
+    "name": "Pekingese",
+    "description": "The Pekingese is a toy dog breed originating from China, favored by Chinese royalty for its distinctive appearance and dignified demeanor.",
+    "origin": "China",
+    "group": "Toy",
+    "image": "assets/breeds/pekingese.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pekingese"
+  },
+  "n02086240-Shih-Tzu": {
+    "name": "Shih Tzu",
+    "description": "The Shih Tzu is a toy dog breed originating from Tibet, bred from the Pekingese and the Lhasa Apso, known for its long silky hair and friendly nature.",
+    "origin": "Tibet",
+    "group": "Toy",
+    "image": "assets/breeds/shih_tzu.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shih_Tzu"
+  },
+  "n02086646-Blenheim_spaniel": {
+    "name": "Cavalier King Charles Spaniel",
+    "description": "The Cavalier King Charles Spaniel is a British toy dog breed known for its affectionate nature and silky, multicolored coat.",
+    "origin": "United Kingdom",
+    "group": "Toy",
+    "image": "assets/breeds/cavalier_king_charles_spaniel.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Cavalier_King_Charles_Spaniel"
+  },
+  "n02086910-papillon": {
+    "name": "Papillon",
+    "description": "The Papillon is one of the oldest toy spaniel breeds, named for its butterfly-like ears and known for its friendly and intelligent demeanor.",
+    "origin": "France",
+    "group": "Toy",
+    "image": "assets/breeds/papillon.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Papillon_dog"
+  },
+  "n02087046-toy_terrier": {
+    "name": "Toy Fox Terrier",
+    "description": "The Toy Fox Terrier is a small terrier breed developed in the United States, known for its agility, intelligence, and lively personality.",
+    "origin": "United States",
+    "group": "Toy",
+    "image": "assets/breeds/toy_fox_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Toy_Fox_Terrier"
+  },
+  "n02087394-Rhodesian_ridgeback": {
+    "name": "Rhodesian Ridgeback",
+    "description": "The Rhodesian Ridgeback is a large dog breed from Southern Africa, originally bred for hunting and guarding, known for the distinctive ridge of hair along its back.",
+    "origin": "Southern Africa",
+    "group": "Hound",
+    "image": "assets/breeds/rhodesian_ridgeback.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rhodesian_Ridgeback"
+  },
+  "n02088094-Afghan_hound": {
+    "name": "Afghan Hound",
+    "description": "The Afghan Hound is a sighthound breed from Afghanistan, known for its elegant appearance and long, flowing coat.",
+    "origin": "Afghanistan",
+    "group": "Hound",
+    "image": "assets/breeds/afghan_hound.jpg",
+    "wikipedia": "https://simple.wikipedia.org/wiki/Afghan_Hound"
+  },
+  "n02088238-basset": {
+    "name": "Basset Hound",
+    "description": "The Basset Hound is a short-legged scent hound originally bred for hunting hare, known for its excellent sense of smell and distinctive appearance.",
+    "origin": "France",
+    "group": "Hound",
+    "image": "assets/breeds/basset_hound.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Basset_Hound"
+  },
+  "n02088364-beagle": {
+    "name": "Beagle",
+    "description": "The Beagle is a small scent hound developed in Great Britain, known for its excellent tracking abilities and friendly temperament.",
+    "origin": "United Kingdom",
+    "group": "Hound",
+    "image": "assets/breeds/beagle.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Beagle"
+  },
+  "n02088466-bloodhound": {
+    "name": "Bloodhound",
+    "description": "The Bloodhound is a large scent hound renowned for its tracking ability by scent, often used in search and rescue operations.",
+    "origin": "Belgium",
+    "group": "Hound",
+    "image": "assets/breeds/bloodhound.jpg",
+    "wikipedia": "https://simple.wikipedia.org/wiki/Bloodhound"
+  },
+  "n02088632-bluetick": {
+    "name": "Bluetick Coonhound",
+    "description": "The Bluetick Coonhound is a breed of coonhound originating in the United States, known for its friendly personality and hunting prowess.",
+    "origin": "United States",
+    "group": "Hound",
+    "image": "assets/breeds/bluetick_coonhound.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bluetick_Coonhound"
+  },
+  "n02089078-black-and-tan_coonhound": {
+    "name": "Black and Tan Coonhound",
+    "description": "The Black and Tan Coonhound is a hunting dog breed developed in the United States, known for its scent-tracking abilities and distinctive coloration.",
+    "origin": "United States",
+    "group": "Hound",
+    "image": "assets/breeds/black_and_tan_coonhound.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Black_and_Tan_Coonhound"
+  },
+  "n02089867-Walker_hound": {
+    "name": "Treeing Walker Coonhound",
+    "description": "The Treeing Walker Coonhound is a breed of hound descended from the English and American Foxhounds, known for its speed and hunting capabilities.",
+    "origin": "United States",
+    "group": "Hound",
+    "image": "assets/breeds/treeing_walker_coonhound.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Treeing_Walker_Coonhound"
+  },
+  "n02089973-English_foxhound": {
+    "name": "English Foxhound",
+    "description": "The English Foxhound is a British breed of scent hound, developed for fox hunting, known for its stamina and pack hunting abilities.",
+    "origin": "United Kingdom",
+    "group": "Hound",
+    "image": "assets/breeds/english_foxhound.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/English_Foxhound"
+  },
+  "n02090379-redbone": {
+    "name": "Redbone Coonhound",
+    "description": "The Redbone Coonhound is an American breed of hunting dog known for its red coat and versatility in tracking various game.",
+    "origin": "United States",
+    "group": "Hound",
+    "image": "assets/breeds/redbone_coonhound.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Redbone_Coonhound"
+  },
+  "n02090622-borzoi": {
+    "name": "Borzoi",
+    "description": "The Borzoi is a Russian sighthound breed known for its elegant appearance and swift hunting abilities.",
+    "origin": "Russia",
+    "group": "Hound",
+    "image": "assets/breeds/borzoi.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Borzoi"
+  },
+  "n02090721-Irish_wolfhound": {
+    "name": "Irish Wolfhound",
+    "description": "The Irish Wolfhound is a giant dog breed from Ireland, originally bred for hunting wolves, known for its imposing size and gentle nature.",
+    "origin": "Ireland",
+    "group": "Hound",
+    "image": "assets/breeds/irish_wolfhound.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Irish_Wolfhound"
+  },
+  "n02091032-Italian_greyhound": {
+    "name": "Italian Greyhound",
+    "description": "The Italian Greyhound is a small sighthound breed from Italy, known for its elegant appearance and affectionate nature.",
+    "origin": "Italy",
+    "group": "Toy",
+    "image": "assets/breeds/italian_greyhound.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Italian_Greyhound"
+  },
+  "n02091134-whippet": {
+    "name": "Whippet",
+    "description": "The Whippet is a British sighthound breed, resembling a smaller Greyhound, known for its speed and gentle demeanor.",
+    "origin": "United Kingdom",
+    "group": "Hound",
+    "image": "assets/breeds/whippet.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Whippet"
+  },
+  "n02091244-Ibizan_hound": {
+    "name": "Ibizan Hound",
+    "description": "The Ibizan Hound is a lean, agile dog from the Balearic Islands, Spain, originally bred for hunting rabbits.",
+    "origin": "Spain",
+    "group": "Hound",
+    "image": "assets/breeds/ibizan_hound.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ibizan_Hound"
+  },
+  "n02091467-Norwegian_elkhound": {
+    "name": "Norwegian Elkhound",
+    "description": "The Norwegian Elkhound is a spitz-type breed from Norway, traditionally used for hunting large game like elk and bears.",
+    "origin": "Norway",
+    "group": "Hound",
+    "image": "assets/breeds/norwegian_elkhound.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Norwegian_Elkhound"
+  },
+  "n02091635-otterhound": {
+    "name": "Otterhound",
+    "description": "The Otterhound is a large British breed developed for otter hunting, known for its dense coat and webbed feet.",
+    "origin": "United Kingdom",
+    "group": "Hound",
+    "image": "assets/breeds/otterhound.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Otterhound"
+  },
+  "n02091831-Saluki": {
+    "name": "Saluki",
+    "description": "The Saluki is an ancient sighthound breed from the Middle East, prized for its speed and endurance.",
+    "origin": "Middle East",
+    "group": "Hound",
+    "image": "assets/breeds/saluki.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Saluki"
+  },
+  "n02092002-Scottish_deerhound": {
+    "name": "Scottish Deerhound",
+    "description": "The Scottish Deerhound is a large sighthound from Scotland, historically used to hunt red deer.",
+    "origin": "Scotland",
+    "group": "Hound",
+    "image": "assets/breeds/scottish_deerhound.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Scottish_Deerhound"
+  },
+  "n02092339-Weimaraner": {
+    "name": "Weimaraner",
+    "description": "The Weimaraner is a German hunting dog known for its sleek gray coat and friendly disposition.",
+    "origin": "Germany",
+    "group": "Sporting",
+    "image": "assets/breeds/weimaraner.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Weimaraner"
+  },
+  "n02093256-Staffordshire_bullterrier": {
+    "name": "Staffordshire Bull Terrier",
+    "description": "The Staffordshire Bull Terrier is a muscular, medium-sized breed from England, originally developed for bull-baiting.",
+    "origin": "United Kingdom",
+    "group": "Terrier",
+    "image": "assets/breeds/staffordshire_bull_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Staffordshire_Bull_Terrier"
+  },
+  "n02093428-American_Staffordshire_terrier": {
+    "name": "American Staffordshire Terrier",
+    "description": "The American Staffordshire Terrier is a medium-sized, short-coated breed known for its strength and loyalty.",
+    "origin": "United States",
+    "group": "Terrier",
+    "image": "assets/breeds/american_staffordshire_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/American_Staffordshire_Terrier"
+  },
+  "n02093647-Bedlington_terrier": {
+    "name": "Bedlington Terrier",
+    "description": "The Bedlington Terrier is a small breed from England, recognizable by its lamb-like appearance and curly coat.",
+    "origin": "United Kingdom",
+    "group": "Terrier",
+    "image": "assets/breeds/bedlington_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bedlington_Terrier"
+  },
+  "n02093754-Border_terrier": {
+    "name": "Border Terrier",
+    "description": "The Border Terrier is a small, rough-coated breed from the UK, originally bred for fox and vermin hunting.",
+    "origin": "United Kingdom",
+    "group": "Terrier",
+    "image": "assets/breeds/border_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Border_Terrier"
+  },
+  "n02093859-Kerry_blue_terrier": {
+    "name": "Kerry Blue Terrier",
+    "description": "The Kerry Blue Terrier is an Irish breed known for its distinctive blue coat and versatility as a working dog.",
+    "origin": "Ireland",
+    "group": "Terrier",
+    "image": "assets/breeds/kerry_blue_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kerry_Blue_Terrier"
+  },
+  "n02093991-Irish_terrier": {
+    "name": "Irish Terrier",
+    "description": "The Irish Terrier is one of the oldest terrier breeds, characterized by its red coat and spirited personality.",
+    "origin": "Ireland",
+    "group": "Terrier",
+    "image": "assets/breeds/irish_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Irish_Terrier"
+  },
+  "n02094114-Norfolk_terrier": {
+    "name": "Norfolk Terrier",
+    "description": "The Norfolk Terrier is a small, sturdy breed from England, originally used for hunting small vermin.",
+    "origin": "United Kingdom",
+    "group": "Terrier",
+    "image": "assets/breeds/norfolk_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Norfolk_Terrier"
+  },
+  "n02094258-Norwich_terrier": {
+    "name": "Norwich Terrier",
+    "description": "The Norwich Terrier is a small breed from England, closely related to the Norfolk Terrier, used for rodent control.",
+    "origin": "United Kingdom",
+    "group": "Terrier",
+    "image": "assets/breeds/norwich_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Norwich_Terrier"
+  },
+  "n02094433-Yorkshire_terrier": {
+    "name": "Yorkshire Terrier",
+    "description": "The Yorkshire Terrier is a small, long-haired breed from England, originally developed for catching rats in mills.",
+    "origin": "United Kingdom",
+    "group": "Toy",
+    "image": "assets/breeds/yorkshire_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Yorkshire_Terrier"
+  },
+  "n02095314-wire-haired_fox_terrier": {
+    "name": "Wire Fox Terrier",
+    "description": "The Wire Fox Terrier is a British breed known for its dense, wiry coat and energetic personality.",
+    "origin": "United Kingdom",
+    "group": "Terrier",
+    "image": "assets/breeds/wire_fox_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Wire_Fox_Terrier"
+  },
+  "n02095570-Lakeland_terrier": {
+    "name": "Lakeland Terrier",
+    "description": "The Lakeland Terrier is a small, sturdy breed from England's Lake District, originally bred for hunting foxes.",
+    "origin": "United Kingdom",
+    "group": "Terrier",
+    "image": "assets/breeds/lakeland_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lakeland_Terrier"
+  },
+  "n02095889-Sealyham_terrier": {
+    "name": "Sealyham Terrier",
+    "description": "The Sealyham Terrier is a small to medium-sized terrier breed from Wales, developed in the mid-to-late 19th century by Captain John Edwardes at Sealyham House, Pembrokeshire. It is known for its distinctive white coat and was originally bred for hunting small game.",
+    "origin": "Wales",
+    "group": "Terrier",
+    "image": "assets/breeds/sealyham_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sealyham_Terrier"
+  },
+  "n02096051-Airedale": {
+    "name": "Airedale Terrier",
+    "description": "The Airedale Terrier, often called the 'King of Terriers,' is the largest of the terrier breeds. Originating from the Aire Valley in Yorkshire, England, it was bred to catch otters and rats in the region between the Aire and Wharfe Rivers.",
+    "origin": "England",
+    "group": "Terrier",
+    "image": "assets/breeds/airedale.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Airedale_Terrier"
+  },
+  "n02096177-cairn": {
+    "name": "Cairn Terrier",
+    "description": "The Cairn Terrier is one of the oldest terrier breeds, originating in the Scottish Highlands. It was used for hunting and burrowing prey among the cairns.",
+    "origin": "Scotland",
+    "group": "Terrier",
+    "image": "assets/breeds/cairn.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Cairn_Terrier"
+  },
+  "n02096294-Australian_terrier": {
+    "name": "Australian Terrier",
+    "description": "The Australian Terrier is a small breed developed in Australia, descended from British terriers. It was bred for hunting and companionship, known for its spirited and lively nature.",
+    "origin": "Australia",
+    "group": "Terrier",
+    "image": "assets/breeds/australian_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Australian_Terrier"
+  },
+  "n02096437-Dandie_Dinmont": {
+    "name": "Dandie Dinmont Terrier",
+    "description": "The Dandie Dinmont Terrier is a small Scottish breed with a distinctive long body and topknot of hair. It was originally bred for hunting otters and badgers.",
+    "origin": "Scotland",
+    "group": "Terrier",
+    "image": "assets/breeds/dandie_dinmont.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dandie_Dinmont_Terrier"
+  },
+  "n02096585-Boston_bull": {
+    "name": "Boston Terrier",
+    "description": "The Boston Terrier, nicknamed the 'American Gentleman,' is a breed originating in the United States. It is known for its tuxedo-like markings and friendly disposition.",
+    "origin": "United States",
+    "group": "Non-Sporting",
+    "image": "assets/breeds/boston_bull.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Boston_Terrier"
+  },
+  "n02097047-miniature_schnauzer": {
+    "name": "Miniature Schnauzer",
+    "description": "The Miniature Schnauzer is a small breed developed in Germany in the 19th century. It was bred to be a ratting dog and is known for its distinctive beard and eyebrows.",
+    "origin": "Germany",
+    "group": "Terrier",
+    "image": "assets/breeds/miniature_schnauzer.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Miniature_Schnauzer"
+  },
+  "n02097130-giant_schnauzer": {
+    "name": "Giant Schnauzer",
+    "description": "The Giant Schnauzer is the largest of the Schnauzer breeds, developed in 17th-century Germany. It was used for driving livestock and guarding properties.",
+    "origin": "Germany",
+    "group": "Working",
+    "image": "assets/breeds/giant_schnauzer.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Giant_Schnauzer"
+  },
+  "n02097209-standard_schnauzer": {
+    "name": "Standard Schnauzer",
+    "description": "The Standard Schnauzer is a medium-sized breed from Germany, known for its versatility as a farm dog, rat catcher, and guard dog.",
+    "origin": "Germany",
+    "group": "Working",
+    "image": "assets/breeds/standard_schnauzer.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Standard_Schnauzer"
+  },
+  "n02097298-Scotch_terrier": {
+    "name": "Scottish Terrier",
+    "description": "The Scottish Terrier, also known as the Scottie, is a small, sturdy breed from Scotland. It was originally bred to hunt vermin on farms.",
+    "origin": "Scotland",
+    "group": "Terrier",
+    "image": "assets/breeds/scotch_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Scottish_Terrier"
+  },
+  "n02097474-Tibetan_terrier": {
+    "name": "Tibetan Terrier",
+    "description": "Despite its name, the Tibetan Terrier is not a true terrier. Originating in Tibet, it was bred as a companion and watchdog in monasteries.",
+    "origin": "Tibet",
+    "group": "Non-Sporting",
+    "image": "assets/breeds/tibetan_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tibetan_Terrier"
+  },
+  "n02097658-silky_terrier": {
+    "name": "Australian Silky Terrier",
+    "description": "The Australian Silky Terrier, or Silky Terrier, is a small breed developed in Australia. It is known for its silky coat and lively personality.",
+    "origin": "Australia",
+    "group": "Toy",
+    "image": "assets/breeds/silky_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Australian_Silky_Terrier"
+  },
+  "n02098105-soft-coated_wheaten_terrier": {
+    "name": "Soft-Coated Wheaten Terrier",
+    "description": "The Soft-Coated Wheaten Terrier is an Irish breed known for its soft, silky coat and friendly disposition. It was originally bred as a farm dog.",
+    "origin": "Ireland",
+    "group": "Terrier",
+    "image": "assets/breeds/soft-coated_wheaten_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Soft-coated_Wheaten_Terrier"
+  },
+  "n02098286-West_Highland_white_terrier": {
+    "name": "West Highland White Terrier",
+    "description": "The West Highland White Terrier, or Westie, is a small, white-coated breed from Scotland. It was bred for hunting and is known for its friendly nature.",
+    "origin": "Scotland",
+    "group": "Terrier",
+    "image": "assets/breeds/west_highland_white_terrier.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/West_Highland_White_Terrier"
+  },
+  "n02098413-Lhasa": {
+    "name": "Lhasa Apso",
+    "description": "The Lhasa Apso is a small breed from Tibet, originally used as an interior watchdog in monasteries. It is known for its long, flowing coat.",
+    "origin": "Tibet",
+    "group": "Non-Sporting",
+    "image": "assets/breeds/lhasa.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lhasa_Apso"
+  },
+  "n02099267-flat-coated_retriever": {
+    "name": "Flat-Coated Retriever",
+    "description": "The Flat-Coated Retriever is a gundog breed from the United Kingdom, known for its friendly and optimistic demeanor and glossy black or liver-colored coat.",
+    "origin": "United Kingdom",
+    "group": "Sporting",
+    "image": "assets/breeds/flat-coated_retriever.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Flat-Coated_Retriever"
+  },
+  "n02099429-curly-coated_retriever": {
+    "name": "Curly-Coated Retriever",
+    "description": "The Curly-Coated Retriever is one of the oldest retriever breeds, originating in England. It is distinguished by its tight, water-resistant curls.",
+    "origin": "England",
+    "group": "Sporting",
+    "image": "assets/breeds/curly-coated_retriever.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Curly-coated_Retriever"
+  },
+  "n02099601-golden_retriever": {
+    "name": "Golden Retriever",
+    "description": "The Golden Retriever is a popular breed known for its friendly nature and golden-colored coat. It was developed in Scotland for retrieving game.",
+    "origin": "Scotland",
+    "group": "Sporting",
+    "image": "assets/breeds/golden_retriever.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Golden_Retriever"
+  },
+  "n02099712-Labrador_retriever": {
+    "name": "Labrador Retriever",
+    "description": "The Labrador Retriever is one of the most popular dog breeds worldwide, known for its intelligence, friendliness, and versatility.",
+    "origin": "Canada",
+    "group": "Sporting",
+    "image": "assets/breeds/labrador_retriever.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Labrador_Retriever"
+  },
+  "n02099849-Chesapeake_Bay_retriever": {
+    "name": "Chesapeake Bay Retriever",
+    "description": "The Chesapeake Bay Retriever is a large breed developed in the Chesapeake Bay area of the United States during the 19th century. Known for its waterproof coat and versatility, it was historically used for retrieving waterfowl, pulling fishing nets, and rescuing fishermen.",
+    "origin": "United States",
+    "group": "Sporting",
+    "image": "assets/breeds/chesapeake_bay_retriever.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chesapeake_Bay_Retriever"
+  },
+  "n02100236-German_short-haired_pointer": {
+    "name": "German Shorthaired Pointer",
+    "description": "The German Shorthaired Pointer is a versatile hunting dog developed in 19th-century Germany. It excels in tracking, pointing, and retrieving game on both land and water.",
+    "origin": "Germany",
+    "group": "Sporting",
+    "image": "assets/breeds/german_short-haired_pointer.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/German_Shorthaired_Pointer"
+  },
+  "n02100583-vizsla": {
+    "name": "Vizsla",
+    "description": "The Vizsla is a Hungarian breed known for its versatility in hunting, pointing, and retrieving. It is affectionate, gentle-mannered, and possesses a strong protective instinct.",
+    "origin": "Hungary",
+    "group": "Sporting",
+    "image": "assets/breeds/vizsla.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vizsla"
+  },
+  "n02100735-English_setter": {
+    "name": "English Setter",
+    "description": "The English Setter is a breed developed in England for setting and pointing game birds. It is known for its methodical hunting style and distinctive 'setting' stance.",
+    "origin": "England",
+    "group": "Sporting",
+    "image": "assets/breeds/english_setter.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/English_Setter"
+  },
+  "n02100877-Irish_setter": {
+    "name": "Irish Setter",
+    "description": "The Irish Setter is a gundog breed originating in Ireland, recognized for its rich red coat and friendly disposition. It is used for hunting and as a family companion.",
+    "origin": "Ireland",
+    "group": "Sporting",
+    "image": "assets/breeds/irish_setter.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Irish_Setter"
+  },
+  "n02101006-Gordon_setter": {
+    "name": "Gordon Setter",
+    "description": "The Gordon Setter is a large Scottish breed, part of the setter family, known for its black and tan coat and prowess in hunting game birds.",
+    "origin": "Scotland",
+    "group": "Sporting",
+    "image": "assets/breeds/gordon_setter.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gordon_Setter"
+  },
+  "n02101388-Brittany_spaniel": {
+    "name": "Brittany Spaniel",
+    "description": "The Brittany Spaniel, or Épagneul Breton, is a French gun dog breed developed for bird hunting. It is energetic, agile, and has a keen nose.",
+    "origin": "France",
+    "group": "Sporting",
+    "image": "assets/breeds/brittany_spaniel.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Brittany_Spaniel"
+  },
+  "n02101556-clumber": {
+    "name": "Clumber Spaniel",
+    "description": "The Clumber Spaniel is the largest of the spaniel breeds, developed in the United Kingdom. It is known for its dense coat and ability to hunt in heavy cover.",
+    "origin": "United Kingdom",
+    "group": "Sporting",
+    "image": "assets/breeds/clumber.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Clumber_Spaniel"
+  },
+  "n02102040-English_springer": {
+    "name": "English Springer Spaniel",
+    "description": "The English Springer Spaniel is a breed developed in England for flushing and retrieving game. It is energetic, intelligent, and has a friendly temperament.",
+    "origin": "England",
+    "group": "Sporting",
+    "image": "assets/breeds/english_springer.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/English_Springer_Spaniel"
+  },
+  "n02102177-Welsh_springer_spaniel": {
+    "name": "Welsh Springer Spaniel",
+    "description": "The Welsh Springer Spaniel is a breed from Wales, known for its red and white coat and versatility in hunting and retrieving game.",
+    "origin": "Wales",
+    "group": "Sporting",
+    "image": "assets/breeds/welsh_springer_spaniel.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Welsh_Springer_Spaniel"
+  },
+  "n02102318-cocker_spaniel": {
+    "name": "Cocker Spaniel",
+    "description": "The Cocker Spaniel is a breed originally developed in the UK for hunting woodcock. It is known for its affectionate nature and beautiful coat.",
+    "origin": "United Kingdom",
+    "group": "Sporting",
+    "image": "assets/breeds/cocker_spaniel.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Cocker_Spaniel"
+  },
+  "n02102480-Sussex_spaniel": {
+    "name": "Sussex Spaniel",
+    "description": "The Sussex Spaniel is a low, compact breed from Sussex, England. It is known for its golden liver-colored coat and calm demeanor.",
+    "origin": "England",
+    "group": "Sporting",
+    "image": "assets/breeds/sussex_spaniel.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sussex_Spaniel"
+  },
+  "n02102973-Irish_water_spaniel": {
+    "name": "Irish Water Spaniel",
+    "description": "The Irish Water Spaniel is the tallest of the spaniel breeds, developed in Ireland in the 1830s. It is known for its curly coat and proficiency in water retrieval.",
+    "origin": "Ireland",
+    "group": "Sporting",
+    "image": "assets/breeds/irish_water_spaniel.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Irish_Water_Spaniel"
+  },
+  "n02104029-kuvasz": {
+    "name": "Kuvasz",
+    "description": "The Kuvasz is a Hungarian breed of flock guardian dog, historically used to guard livestock and as royal guard dogs. It is known for its white coat and protective nature.",
+    "origin": "Hungary",
+    "group": "Working",
+    "image": "assets/breeds/kuvasz.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kuvasz"
+  },
+  "n02104365-schipperke": {
+    "name": "Schipperke",
+    "description": "The Schipperke is a small Belgian breed, originally used as a barge dog. It is known for its fox-like face, black coat, and lively personality.",
+    "origin": "Belgium",
+    "group": "Non-Sporting",
+    "image": "assets/breeds/schipperke.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Schipperke"
+  },
+  "n02105056-groenendael": {
+    "name": "Belgian Sheepdog (Groenendael)",
+    "description": "The Belgian Sheepdog, also known as the Groenendael, is one of the four varieties of Belgian Shepherd dogs. It is known for its black coat and versatility in herding and protection work.",
+    "origin": "Belgium",
+    "group": "Herding",
+    "image": "assets/breeds/groenendael.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Belgian_Shepherd"
+  },
+  "n02105162-malinois": {
+    "name": "Belgian Malinois",
+    "description": "The Belgian Malinois is a variety of the Belgian Shepherd dog, known for its high energy, intelligence, and suitability for police and military work.",
+    "origin": "Belgium",
+    "group": "Herding",
+    "image": "assets/breeds/malinois.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Belgian_Shepherd"
+  },
+  "n02105251-briard": {
+    "name": "Briard",
+    "description": "The Briard, or Berger de Brie, is a large French shepherd dog known for herding and guarding sheep. It has a long, wavy coat and a strong, protective nature.",
+    "origin": "France",
+    "group": "Herding",
+    "image": "assets/breeds/briard.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Briard"
+  },
+  "n02105412-kelpie": {
+    "name": "Australian Kelpie",
+    "description": "The Australian Kelpie is a medium-sized, energetic herding dog developed in Australia. It is known for its intelligence, agility, and ability to work independently.",
+    "origin": "Australia",
+    "group": "Herding",
+    "image": "assets/breeds/australian_kelpie.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Australian_Kelpie"
+  },
+  "n02105505-komondor": {
+    "name": "Komondor",
+    "description": "The Komondor is a large Hungarian livestock guardian dog, recognized for its distinctive long, corded coat resembling dreadlocks.",
+    "origin": "Hungary",
+    "group": "Working",
+    "image": "assets/breeds/komondor.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Komondor"
+  },
+  "n02105641-Old_English_sheepdog": {
+    "name": "Old English Sheepdog",
+    "description": "The Old English Sheepdog is a large, shaggy-coated breed from England, originally used for herding livestock. It is known for its gentle and affectionate nature.",
+    "origin": "England",
+    "group": "Herding",
+    "image": "assets/breeds/old_english_sheepdog.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Old_English_Sheepdog"
+  },
+  "n02105855-Shetland_sheepdog": {
+    "name": "Shetland Sheepdog",
+    "description": "The Shetland Sheepdog, or Sheltie, is a small, agile herding dog from Scotland's Shetland Islands. It is intelligent, loyal, and excels in obedience training.",
+    "origin": "Scotland",
+    "group": "Herding",
+    "image": "assets/breeds/shetland_sheepdog.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shetland_Sheepdog"
+  },
+  "n02106030-collie": {
+    "name": "Collie",
+    "description": "The Collie is a medium-sized herding dog originating from Scotland and Northern England. Known for its intelligence and loyalty, it comes in various coat types.",
+    "origin": "Scotland",
+    "group": "Herding",
+    "image": "assets/breeds/collie.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Collie"
+  },
+  "n02106166-Border_collie": {
+    "name": "Border Collie",
+    "description": "The Border Collie is a highly intelligent and energetic herding dog from the Anglo-Scottish border region. It excels in obedience and agility competitions.",
+    "origin": "United Kingdom",
+    "group": "Herding",
+    "image": "assets/breeds/border_collie.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Border_Collie"
+  },
+  "n02106382-Bouvier_des_Flandres": {
+    "name": "Bouvier des Flandres",
+    "description": "The Bouvier des Flandres is a powerful herding dog from Flanders, Belgium. Originally used for cattle driving and cart pulling, it is now also a guard and police dog.",
+    "origin": "Belgium",
+    "group": "Herding",
+    "image": "assets/breeds/bouvier_des_flandres.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bouvier_des_Flandres"
+  },
+  "n02106550-Rottweiler": {
+    "name": "Rottweiler",
+    "description": "The Rottweiler is a robust and powerful working dog from Germany, originally used for herding livestock and pulling carts. It is known for its loyalty and protective nature.",
+    "origin": "Germany",
+    "group": "Working",
+    "image": "assets/breeds/rottweiler.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rottweiler"
+  },
+  "n02106662-German_shepherd": {
+    "name": "German Shepherd",
+    "description": "The German Shepherd is a versatile working dog developed in Germany. It is renowned for its intelligence, strength, and obedience, making it a popular police and service dog.",
+    "origin": "Germany",
+    "group": "Herding",
+    "image": "assets/breeds/german_shepherd.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/German_Shepherd"
+  },
+  "n02107142-Doberman": {
+    "name": "Doberman Pinscher",
+    "description": "The Doberman Pinscher is a sleek and powerful working dog from Germany, developed by Louis Dobermann in the late 19th century. It is known for its loyalty and intelligence.",
+    "origin": "Germany",
+    "group": "Working",
+    "image": "assets/breeds/doberman_pinscher.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dobermann"
+  },
+  "n02107312-miniature_pinscher": {
+    "name": "Miniature Pinscher",
+    "description": "The Miniature Pinscher, or Min Pin, is a small, energetic breed from Germany. Despite its resemblance to the Doberman, it is a distinct and older breed known for its spirited personality.",
+    "origin": "Germany",
+    "group": "Toy",
+    "image": "assets/breeds/miniature_pinscher.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Miniature_Pinscher"
+  },
+  "n02107574-Greater_Swiss_Mountain_dog": {
+    "name": "Greater Swiss Mountain Dog",
+    "description": "The Greater Swiss Mountain Dog is a large, sturdy working breed from the Swiss Alps. It was historically used for herding and pulling carts.",
+    "origin": "Switzerland",
+    "group": "Working",
+    "image": "assets/breeds/greater_swiss_mountain_dog.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Greater_Swiss_Mountain_Dog"
+  },
+  "n02107683-Bernese_mountain_dog": {
+    "name": "Bernese Mountain Dog",
+    "description": "The Bernese Mountain Dog is a large, tricolored working dog from Switzerland, known for its gentle temperament and strength. It was originally used for draft work and herding.",
+    "origin": "Switzerland",
+    "group": "Working",
+    "image": "assets/breeds/bernese_mountain_dog.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bernese_Mountain_Dog"
+  },
+  "n02107908-Appenzeller": {
+    "name": "Appenzeller Sennenhund",
+    "description": "The Appenzeller Sennenhund is a medium-sized herding dog from the Appenzell region of Switzerland. It is known for its agility and versatility in farm work.",
+    "origin": "Switzerland",
+    "group": "Working",
+    "image": "assets/breeds/appenzeller_sennenhund.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Appenzeller_Sennenhund"
+  },
+  "n02108000-EntleBucher": {
+    "name": "Entlebucher Mountain Dog",
+    "description": "The Entlebucher Mountain Dog is the smallest of the four Swiss Mountain Dogs. It is a compact and muscular herding dog, known for its agility and enthusiasm.",
+    "origin": "Switzerland",
+    "group": "Herding",
+    "image": "assets/breeds/entlebucher_mountain_dog.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Entlebucher_Mountain_Dog"
+  },
+  "n02108089-boxer": {
+    "name": "Boxer",
+    "description": "The Boxer is a medium to large-sized working dog developed in Germany. It is known for its strong, muscular build and playful, energetic personality.",
+    "origin": "Germany",
+    "group": "Working",
+    "image": "assets/breeds/boxer.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Boxer_(dog)"
+  },
+  "n02108422-bull_mastiff": {
+    "name": "Bullmastiff",
+    "description": "The Bullmastiff is a large, solidly built breed developed in 19th-century England by crossing Bulldogs and Mastiffs. Originally bred to guard estates, it is known for its strength, loyalty, and protective nature.",
+    "origin": "England",
+    "group": "Working",
+    "image": "assets/breeds/bullmastiff.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bullmastiff"
+  },
+  "n02108551-Tibetan_mastiff": {
+    "name": "Tibetan Mastiff",
+    "description": "The Tibetan Mastiff is an ancient, large breed from the Himalayas, traditionally used to protect monasteries and livestock. It is known for its independence, strength, and thick double coat.",
+    "origin": "Tibet",
+    "group": "Working",
+    "image": "assets/breeds/tibetan_mastiff.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tibetan_Mastiff"
+  },
+  "n02108915-French_bulldog": {
+    "name": "French Bulldog",
+    "description": "The French Bulldog is a small, muscular breed with a smooth coat, compact build, and distinctive bat-like ears. Originating in 19th-century France, it is a popular companion dog known for its affectionate nature.",
+    "origin": "France",
+    "group": "Non-Sporting",
+    "image": "assets/breeds/french_bulldog.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/French_Bulldog"
+  },
+  "n02109047-Great_Dane": {
+    "name": "Great Dane",
+    "description": "The Great Dane is a German breed of large mastiff-sighthound, which descends from hunting dogs of the Middle Ages used to hunt bears, wild boar, and deer.",
+    "origin": "Germany",
+    "group": "Working",
+    "image": "assets/breeds/great_dane.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Great_Dane"
+  },
+  "n02109525-Saint_Bernard": {
+    "name": "Saint Bernard",
+    "description": "The Saint Bernard is a breed of very large working dog from the Western Alps in Italy and Switzerland. They were originally bred for rescue work by the hospice of the Great St Bernard Pass on the Italian-Swiss border.",
+    "origin": "Switzerland",
+    "group": "Working",
+    "image": "assets/breeds/saint_bernard.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Saint_Bernard_(dog_breed)"
+  },
+  "n02109961-Eskimo_dog": {
+    "name": "American Eskimo Dog",
+    "description": "The American Eskimo Dog is a breed of companion dog, originating in Germany. The American Eskimo Dog is a member of the Spitz family.",
+    "origin": "Germany",
+    "group": "Non-Sporting",
+    "image": "assets/breeds/american_eskimo_dog.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/American_Eskimo_Dog"
+  },
+  "n02110063-malamute": {
+    "name": "Alaskan Malamute",
+    "description": "The Alaskan Malamute is a large breed of dog that was originally bred for its strength and endurance, to haul heavy freight as a sled dog.",
+    "origin": "United States",
+    "group": "Working",
+    "image": "assets/breeds/alaskan_malamute.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Alaskan_Malamute"
+  },
+  "n02110185-Siberian_husky": {
+    "name": "Siberian Husky",
+    "description": "The Siberian Husky is a breed of medium-sized working sled dog. The breed belongs to the Spitz genetic family. It is recognizable by its thickly furred double coat, erect triangular ears, and distinctive markings.",
+    "origin": "Russia",
+    "group": "Working",
+    "image": "assets/breeds/siberian_husky.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Siberian_Husky"
+  },
+  "n02110627-affenpinscher": {
+    "name": "Affenpinscher",
+    "description": "The Affenpinscher is a small toy dog breed from Germany, noted for its characteristic monkey-like face. These dogs have short to medium-length wiry fur, and are typically black, although other colors are possible.",
+    "origin": "Germany",
+    "group": "Toy",
+    "image": "assets/breeds/affenpinscher.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Affenpinscher"
+  },
+  "n02110806-basenji": {
+    "name": "Basenji",
+    "description": "The Basenji is a breed of hunting dog created from stock that originated in Central Africa. The breed does not bark in the traditional manner of most dogs, rather vocalising in an unusual, yodel-like 'talking' sound.",
+    "origin": "Democratic Republic of the Congo",
+    "group": "Hound",
+    "image": "assets/breeds/basenji.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Basenji"
+  },
+  "n02110958-pug": {
+    "name": "Pug",
+    "description": "The Pug is a breed of dog with the physically distinctive features of a wrinkly, short-muzzled face, and curled tail. An ancient breed, with roots dating back to 400 B.C., they have a fine, glossy coat that comes in a variety of colors.",
+    "origin": "China",
+    "group": "Toy",
+    "image": "assets/breeds/pug.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pug"
+  },
+  "n02111129-Leonberg": {
+    "name": "Leonberger",
+    "description": "The Leonberger is a lush-coated giant of German origin. They have a gentle nature and serene patience and they relish the companionship of the whole family.",
+    "origin": "Germany",
+    "group": "Working",
+    "image": "assets/breeds/leonberger.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Leonberger"
+  },
+  "n02111277-Newfoundland": {
+    "name": "Newfoundland",
+    "description": "The Newfoundland is a large breed of working dog. They were originally bred and used as working dogs for fishermen in Newfoundland. They excel at water rescue/lifesaving because of their muscular build, thick double coat, webbed paws, and swimming abilities.",
+    "origin": "Canada",
+    "group": "Working",
+    "image": "assets/breeds/newfoundland.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Newfoundland_dog"
+  },
+  "n02111500-Great_Pyrenees": {
+    "name": "Great Pyrenees",
+    "description": "The Pyrenean Mountain Dog, known as the Great Pyrenees in North America, is a large breed of dog used as a livestock guardian dog. It originates from the eastern or French side of the Pyrenees Mountains that separate France and Spain.",
+    "origin": "France",
+    "group": "Working",
+    "image": "assets/breeds/great_pyrenees.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pyrenean_Mountain_Dog"
+  },
+  "n02111889-Samoyed": {
+    "name": "Samoyed",
+    "description": "The Samoyed is a Eurasian dog breed descended from hunting and herding dogs from Siberia. The progenitor of the Samoyeds was the Nenets Herding Laika, a reindeer herding spitz commonly used throughout northern Siberia.",
+    "origin": "Russia",
+    "group": "Working",
+    "image": "assets/breeds/samoyed.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Samoyed"
+  },
+  "n02112018-Pomeranian": {
+    "name": "Pomeranian",
+    "description": "The Pomeranian is a small, fluffy toy breed descended from the German Spitz. Known for its lively personality and fox-like face, it gained popularity in the 18th century, notably among British royalty.",
+    "origin": "Germany/Poland",
+    "group": "Toy",
+    "image": "assets/breeds/pomeranian.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pomeranian_dog"
+  },
+  "n02112137-chow": {
+    "name": "Chow Chow",
+    "description": "The Chow Chow is a spitz-type dog breed originally from Northern China. It is known for its dense double coat, lion-like mane, and distinctive blue-black tongue.",
+    "origin": "China",
+    "group": "Non-Sporting",
+    "image": "assets/breeds/chow_chow.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chow_Chow"
+  },
+  "n02112350-keeshond": {
+    "name": "Keeshond",
+    "description": "The Keeshond is a medium-sized spitz dog known for its plush two-layer coat of silver and black fur with a ruff and curled tail. It was historically used as a barge dog in the Netherlands.",
+    "origin": "Netherlands",
+    "group": "Non-Sporting",
+    "image": "assets/breeds/keeshond.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Keeshond"
+  },
+  "n02112706-Brabancon_griffon": {
+    "name": "Brabancon Griffon",
+    "description": "The Brabancon Griffon is a toy dog breed from Brussels, Belgium. It is one of three breeds collectively known as the Griffon Bruxellois, distinguished by its smooth coat.",
+    "origin": "Belgium",
+    "group": "Toy",
+    "image": "assets/breeds/brabancon_griffon.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Griffon_Bruxellois"
+  },
+  "n02113023-Pembroke": {
+    "name": "Pembroke Welsh Corgi",
+    "description": "The Pembroke Welsh Corgi is a small herding dog breed originating from Pembrokeshire, Wales. It is known for its short stature, erect ears, and association with British royalty.",
+    "origin": "Wales",
+    "group": "Herding",
+    "image": "assets/breeds/pembroke_welsh_corgi.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Welsh_Corgi"
+  },
+  "n02113186-Cardigan": {
+    "name": "Cardigan Welsh Corgi",
+    "description": "The Cardigan Welsh Corgi is one of the oldest dog breeds in the British Isles. It is a loyal and trainable herding dog, naturally attuned to managing various livestock.",
+    "origin": "Wales",
+    "group": "Herding",
+    "image": "assets/breeds/cardigan_welsh_corgi.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Cardigan_Welsh_Corgi"
+  },
+  "n02113624-toy_poodle": {
+    "name": "Toy Poodle",
+    "description": "The Toy Poodle is a small and intelligent breed, originally bred as a companion dog. Known for its hypoallergenic curly coat, it excels in obedience and agility.",
+    "origin": "Germany/France",
+    "group": "Toy",
+    "image": "assets/breeds/toy_poodle.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Poodle"
+  },
+  "n02113712-miniature_poodle": {
+    "name": "Miniature Poodle",
+    "description": "The Miniature Poodle is a medium-sized, intelligent breed developed from the Standard Poodle. It is known for its hypoallergenic curly coat and versatility in various dog sports.",
+    "origin": "Germany/France",
+    "group": "Non-Sporting",
+    "image": "assets/breeds/miniature_poodle.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Poodle"
+  },
+  "n02113799-standard_poodle": {
+    "name": "Standard Poodle",
+    "description": "The Standard Poodle is the largest of the poodle breeds, originally bred as a water retriever. It is known for its intelligence, hypoallergenic coat, and elegant appearance.",
+    "origin": "Germany/France",
+    "group": "Non-Sporting",
+    "image": "assets/breeds/standard_poodle.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Poodle"
+  },
+  "n02113978-Mexican_hairless": {
+    "name": "Mexican Hairless (Xoloitzcuintli)",
+    "description": "The Xoloitzcuintli, or Mexican Hairless Dog, is an ancient breed from Mexico. Known for its hairless appearance and warm skin, it was considered sacred by the Aztecs.",
+    "origin": "Mexico",
+    "group": "Non-Sporting",
+    "image": "assets/breeds/mexican_hairless.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Xoloitzcuintle"
+  },
+  "n02115641-dingo": {
+    "name": "Dingo",
+    "description": "The Dingo is a wild dog native to Australia, believed to have arrived over 8,000 years ago. It is considered a primitive form of the domestic dog.",
+    "origin": "Australia",
+    "group": "Non-Domestic",
+    "image": "assets/breeds/dingo.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dingo"
+  },
+  "n02115913-dhole": {
+    "name": "Dhole",
+    "description": "The Dhole, or Asiatic Wild Dog, is a canid native to Central, South, and Southeast Asia. It is known for its social behavior and distinctive whistling calls.",
+    "origin": "Asia",
+    "group": "Non-Domestic",
+    "image": "assets/breeds/dhole.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dhole"
+  },
+  "n02116738-African_hunting_dog": {
+    "name": "African Wild Dog",
+    "description": "The African Wild Dog, also known as the Painted Dog, is a wild canine native to sub-Saharan Africa. It is the largest wild canine in Africa and is known for its unique coat patterns.",
+    "origin": "Africa",
+    "group": "Non-Domestic",
+    "image": "assets/breeds/african_wild_dog.jpg",
+    "wikipedia": "https://en.wikipedia.org/wiki/African_wild_dog"
+  }
+}
+
+
+
+

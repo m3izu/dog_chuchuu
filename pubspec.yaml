@@ -15,6 +15,8 @@ dependencies:
   flutter_secure_storage: ^8.0.0
   http: ^0.13.5
   google_fonts: ^4.0.4
+  camera: ^0.10.0+1
+  url_launcher: ^6.1.5
 
 dev_dependencies:
   flutter_test:
@@ -37,6 +39,130 @@ flutter:
     - assets/icon/left.png
     - assets/icon/heart.png
     - assets/dog_breeds_clean.json
+    - assets/icon/heart1.png
+    - assets/breed_info.json
+    - assets/breeds/chihuahua.jpg
+    - assets/breeds/japanese_chin.jpg
+    - assets/breeds/maltese.jpg
+    - assets/breeds/pekingese.jpg
+    - assets/breeds/shih_tzu.jpg
+    - assets/breeds/cavalier_king_charles_spaniel.jpg
+    - assets/breeds/papillon.jpg
+    - assets/breeds/toy_fox_terrier.jpg
+    - assets/breeds/rhodesian_ridgeback.jpg
+    - assets/breeds/afghan_hound.jpg
+    - assets/breeds/basset_hound.jpg
+    - assets/breeds/beagle.jpg
+    - assets/breeds/bloodhound.jpg
+    - assets/breeds/bluetick_coonhound.jpg
+    - assets/breeds/black_and_tan_coonhound.jpg
+    - assets/breeds/treeing_walker_coonhound.jpg
+    - assets/breeds/english_foxhound.jpg
+    - assets/breeds/redbone_coonhound.jpg
+    - assets/breeds/borzoi.jpg
+    - assets/breeds/irish_wolfhound.jpg
+    - assets/breeds/italian_greyhound.jpg
+    - assets/breeds/whippet.jpg
+    - assets/breeds/ibizan_hound.jpg
+    - assets/breeds/norwegian_elkhound.jpg
+    - assets/breeds/otterhound.jpg
+    - assets/breeds/saluki.jpg
+    - assets/breeds/scottish_deerhound.jpg
+    - assets/breeds/weimaraner.jpg
+    - assets/breeds/staffordshire_bull_terrier.jpg
+    - assets/breeds/american_staffordshire_terrier.jpg
+    - assets/breeds/bedlington_terrier.jpg
+    - assets/breeds/border_terrier.jpg
+    - assets/breeds/kerry_blue_terrier.jpg
+    - assets/breeds/irish_terrier.jpg
+    - assets/breeds/norfolk_terrier.jpg
+    - assets/breeds/norwich_terrier.jpg
+    - assets/breeds/yorkshire_terrier.jpg
+    - assets/breeds/wire_fox_terrier.jpg
+    - assets/breeds/lakeland_terrier.jpg
+    - assets/breeds/sealyham_terrier.jpg
+    - assets/breeds/airedale.jpg
+    - assets/breeds/cairn.jpg
+    - assets/breeds/australian_terrier.jpg
+    - assets/breeds/dandie_dinmont.jpg
+    - assets/breeds/boston_bull.jpg
+    - assets/breeds/miniature_schnauzer.jpg
+    - assets/breeds/giant_schnauzer.jpg
+    - assets/breeds/standard_schnauzer.jpg
+    - assets/breeds/scotch_terrier.jpg
+    - assets/breeds/tibetan_terrier.jpg
+    - assets/breeds/silky_terrier.jpg
+    - assets/breeds/soft-coated_wheaten_terrier.jpg
+    - assets/breeds/west_highland_white_terrier.jpg
+    - assets/breeds/lhasa.jpg
+    - assets/breeds/flat-coated_retriever.jpg
+    - assets/breeds/curly-coated_retriever.jpg
+    - assets/breeds/golden_retriever.jpg
+    - assets/breeds/labrador_retriever.jpg
+    - assets/breeds/chesapeake_bay_retriever.jpg
+    - assets/breeds/german_short-haired_pointer.jpg
+    - assets/breeds/vizsla.jpg
+    - assets/breeds/english_setter.jpg
+    - assets/breeds/irish_setter.jpg
+    - assets/breeds/gordon_setter.jpg
+    - assets/breeds/brittany_spaniel.jpg
+    - assets/breeds/clumber.jpg
+    - assets/breeds/english_springer.jpg
+    - assets/breeds/welsh_springer_spaniel.jpg
+    - assets/breeds/cocker_spaniel.jpg
+    - assets/breeds/sussex_spaniel.jpg
+    - assets/breeds/irish_water_spaniel.jpg
+    - assets/breeds/kuvasz.jpg
+    - assets/breeds/schipperke.jpg
+    - assets/breeds/groenendael.jpg
+    - assets/breeds/malinois.jpg
+    - assets/breeds/briard.jpg
+    - assets/breeds/australian_kelpie.jpg
+    - assets/breeds/komondor.jpg
+    - assets/breeds/old_english_sheepdog.jpg
+    - assets/breeds/shetland_sheepdog.jpg
+    - assets/breeds/collie.jpg
+    - assets/breeds/border_collie.jpg
+    - assets/breeds/bouvier_des_flandres.jpg
+    - assets/breeds/rottweiler.jpg
+    - assets/breeds/german_shepherd.jpg
+    - assets/breeds/doberman_pinscher.jpg
+    - assets/breeds/miniature_pinscher.jpg
+    - assets/breeds/greater_swiss_mountain_dog.jpg
+    - assets/breeds/bernese_mountain_dog.jpg
+    - assets/breeds/appenzeller_sennenhund.jpg
+    - assets/breeds/entlebucher_mountain_dog.jpg
+    - assets/breeds/boxer.jpg
+    - assets/breeds/bullmastiff.jpg
+    - assets/breeds/tibetan_mastiff.jpg
+    - assets/breeds/french_bulldog.jpg
+    - assets/breeds/great_dane.jpg
+    - assets/breeds/saint_bernard.jpg
+    - assets/breeds/american_eskimo_dog.jpg
+    - assets/breeds/alaskan_malamute.jpg
+    - assets/breeds/siberian_husky.jpg
+    - assets/breeds/affenpinscher.jpg
+    - assets/breeds/basenji.jpg
+    - assets/breeds/pug.jpg
+    - assets/breeds/leonberger.jpg
+    - assets/breeds/newfoundland.jpg
+    - assets/breeds/great_pyrenees.jpg
+    - assets/breeds/samoyed.jpg
+    - assets/breeds/pomeranian.jpg
+    - assets/breeds/chow_chow.jpg
+    - assets/breeds/keeshond.jpg
+    - assets/breeds/brabancon_griffon.jpg
+    - assets/breeds/pembroke_welsh_corgi.jpg
+    - assets/breeds/cardigan_welsh_corgi.jpg
+    - assets/breeds/toy_poodle.jpg
+    - assets/breeds/miniature_poodle.jpg
+    - assets/breeds/standard_poodle.jpg
+    - assets/breeds/mexican_hairless.jpg
+    - assets/breeds/dingo.jpg
+    - assets/breeds/dhole.jpg
+    - assets/breeds/african_wild_dog.jpg
+  
+
     
 
 flutter_icons:
